@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@theme {
+  --breakpoint-*: initial;
+  --breakpoint-mobile: 340px;
+  --breakpoint-tablet: 640px;
+  --breakpoint-laptop: 1100px;
+  --breakpoint-desktop: 1500px;
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url(../../public/font/Poppins-Regular.ttf);
+}
+:root {
+  --fontFamily: Poppins;
+}

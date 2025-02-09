@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactus</title>
+    <link rel="stylesheet" href="./src/css/main.css">
+    <link
+    rel="shortcut icon"
+    href="./public/images/log.svg"
+    type="image/x-icon"
+    />
+</head>
+<body>
+    <!-- #region project-->
+    <div class="wrapper">
+
+        <!-- #region header-->
+            <header class="sticky top-0 left-0 z-[100000] bg-[#1C1E53] w-full mobile:h-[66px] desktop:h-[92px] flex items-center justify-center">
+                <div class="flex mobile:w-full mobile:h-full mobile:mx-[20px] tablet:w-[715px] tablet:h-full tablet:mx-[100px] laptop:w-[1025px] laptop:h-full laptop:mx-[130px] desktop:w-[80%] desktop:h-full desktop:mx-[160px]">
+                    <div class="h-full mobile:w-[50%] tablet:w-[20%] flex items-center mobile:justify-center tablet:justify-start">
+                        <img src="./public/images/icon.svg" class="w-[122px]" alt="">
+                    </div>
+                    <div class="h-full mobile:w-[50%] tablet:w-[80%] flex items-center justify-end gap-[30px]">
+                        <div class="w-fit h-[30px] mobile:hidden tablet:block">
+                            <a href="./index.html" class="hover:text-white transition-all duration-300 ease-linear font-[Poppins] font-medium mobile:text-[12px] laptop:text-[16px] leading-7 text-[#BBBBCB]">Home</a>
+                        </div>
+                        <div class="w-fit h-[30px] mobile:hidden tablet:block">
+                            <a href="./aboutus.html" class="hover:text-white transition-all duration-300 ease-linear font-[Poppins] font-medium mobile:text-[12px] laptop:text-[16px] leading-7 text-[#BBBBCB]">About us</a>
+                        </div>
+                        <div class="w-fit h-[30px] mobile:hidden tablet:block">
+                            <a href="./features.html" class="hover:text-white transition-all duration-300 ease-linear font-[Poppins] font-medium mobile:text-[12px] laptop:text-[16px] leading-7 text-[#BBBBCB]">Features</a>
+                        </div>
+                        <div class="w-fit h-[30px] mobile:hidden tablet:block">
+                            <a href="./pricing.html" class="hover:text-white transition-all duration-300 ease-linear font-[Poppins] font-medium mobile:text-[12px] laptop:text-[16px] leading-7 text-[#BBBBCB]">Pricing</a>
+                        </div>
+                        <div class="w-fit h-[30px] mobile:hidden tablet:block">
+                            <a href="#" class="hover:text-white transition-all duration-300 ease-linear font-[Poppins] font-medium mobile:text-[12px] laptop:text-[16px] leading-7 text-[#BBBBCB]">FAQ</a>
+                        </div>
+                        <div class="w-fit h-[30px] mobile:hidden tablet:block">
+                            <a href="#" class="hover:text-white transition-all duration-300 ease-linear font-[Poppins] font-medium mobile:text-[12px] laptop:text-[16px] leading-7 text-[#BBBBCB]">Blog</a>
+                        </div>
+                        <a href="./contactus.html">
+                            <button class="cursor-pointer mobile:w-[80px] tablet:w-[100px] laptop:w-[145px] laptop:h-[45px] desktop:w-[185px] desktop:h-[60px] rounded-[41px] border-solid border-[#F4F6FC33] border-[2px] hover:bg-white hover:border-[#2b2b2b] transition-all duration-300 ease-linear ">
+                                <h2 class="hover:text-[#2b2b2b] transition-all duration-300 ease-linear font-[Poppins] font-medium mobile:text-[12px] laptop:text-[16px] leading-7 text-white">Contact us</h2>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div class="flex tablet:hidden absolute top-[23px] left-[20px]">
+                    <button id="menu-toggle" class="desktop:hidden mobile:w-[100%] mobile:h-[20px] mobile:flex mobile:items-center pr-[5px] focus:outline-none">
+                        <div class="mobile:w-[25px] mobile:h-[25px] mobile:flex mobile:justify-center mobile:items-center mobile:flex-col mobile:gap-[4px] mobile:cursor-pointer">
+                        <div class="mobile:w-[25px] mobile:h-[3px] mobile:bg-white rounded-[5px]"></div>
+                        <div class="mobile:w-[25px] mobile:h-[3px] mobile:bg-white rounded-[5px]"></div>
+                        <div class="mobile:w-[25px] mobile:h-[3px] mobile:bg-white rounded-[5px]"></div>
+                        </div>
+                    </button>
+                </div>
+                <div id="mobile-menu" class="hidden bg-[#1C1E53] mobile:w-full tablet:hidden desktop:hidden absolute top-[65px]">
+                    <div class="box-border flex flex-col gap-2 pl-[20px]">
+                        <a href="./index.html" class="dark:hover:text-[#de4558] block text-[#BBBBCB] text-[12px] hover:text-white transition-all duration-300 ease-linear font-['Poppins']">Home</a>
+                        <a href="./aboutus.html" class="dark:hover:text-[#de4558] block text-[#BBBBCB] text-[12px] hover:text-white transition-all duration-300 ease-linear font-['Poppins']">About us</a>
+                        <a href="./features.html" class="dark:hover:text-[#de4558] block text-[#BBBBCB] text-[12px] hover:text-white transition-all duration-300 ease-linear font-['Poppins']">Features</a>
+                        <a href="./pricing.html" class="dark:hover:text-[#de4558] block text-[#BBBBCB] text-[12px] hover:text-white transition-all duration-300 ease-linear font-['Poppins'] ">Pricing</a>
+                        <a href="#" class="dark:hover:text-[#de4558] block text-[#BBBBCB] text-[12px] hover:text-white transition-all duration-300 ease-linear font-['Poppins']">FAQ</a>
+                        <a href="#" class="dark:hover:text-[#de4558] block text-[#BBBBCB] text-[12px] hover:text-white transition-all duration-300 ease-linear font-['Poppins'] ">Blog</a>
+                    </div>
+                </div>
+            </header>
+        <!-- #endregion -->
+        
+        <!-- #region contact us-->
+        <section class="w-full h-[265px] flex flex-col justify-end gap-[25px] items-center pb-[55px]">
+            <h1 class="font-['Poppins'] text-[#282938] mobile:font-semibold mobile:text-[36px] mobile:leading-10 desktop:text-[48px] desktop:leading-16">Contact Us</h1>
+            <p class="font-['Poppins'] text-[#282938] mobile:font-normal mobile:text-[12px] mobile:leading-5 desktop:text-[16px] desktop:leading-7 text-center mobile:-[160px] tablet:w-[380px] laptop:w-[440px] desktop:w-[560px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+        </section>
+        <!-- #endregion -->
+                
+        <!-- #region form-->
+        <div class="w-full mobile:h-auto tablet:h-auto laptop:h-[625px] desktop:h-[800px] flex items-center justify-center p-4">
+            <form class="bg-[#F4F6FC] mobile:w-full mobile:h-auto tablet:w-full tablet:h-full laptop:w-[850px] laptop:h-[515px] desktop:w-[1061px] desktop:h-[640px] shadow-md rounded-lg tablet:p-10 desktop:p-14">
+                <div class="desktop:w-[915px] desktop:h-[480px]">
+                    <div class="w-full mobile:h-auto laptop:h-[50%] tablet:flex-row tablet:flex-wrap">
+                        <div class="w-full mobile:h-auto tablet:h-[50%] flex mobile:flex-col laptop:flex-row justify-around">
+                            <div class="mb-4 tablet:h-[60px] laptop:w-[350px] laptop:h-[80px] desktop:w-[438px] desktop:h-[102px]">
+                                <label class="block text-[#000000] text-sm font-bold mb-2" for="name">
+                                Name
+                                </label>
+                                <input
+                                class="w-full px-3 laptop:h-[50px] desktop:h-[60px] py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                id="name"
+                                type="text"
+                                placeholder="Enter Your Name"
+                                />
+                            </div>
+                            <div class="mb-4 tablet:h-[60px] laptop:w-[350px] laptop:h-[80px] desktop:w-[438px] desktop:h-[102px]">
+                                <label class="block text-gray-700 text-sm font-bold mb-2" for="email">
+                                Email
+                                </label>
+                                <input
+                                class="w-full px-3 py-2 border laptop:h-[50px] desktop:h-[60px] border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                id="email"
+                                type="email"
+                                placeholder="Enter your Emial"
+                                />
+                            </div>
+                        </div>
+                        <div class="w-full mobile:h-auto tablet:h-[50%] flex mobile:flex-col laptop:flex-row justify-around">
+                            <div class="mb-4 tablet:h-[60px] laptop:w-[350px] laptop:h-[80px] desktop:w-[438px] desktop:h-[102px]">
+                                <label class="block text-gray-700 text-sm font-bold mb-2" for="subject">
+                                    Subject
+                                </label>
+                                <input
+                                    class="w-full px-3 py-2 border laptop:h-[50px] desktop:h-[60px] border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                    id="subject"
+                                    type="text"
+                                    placeholder="Provide context"
+                                />
+                                </div>
+    
+                            <div class="mb-4 tablet:h-[60px] laptop:w-[350px] laptop:h-[80px] desktop:w-[438px] desktop:h-[102px]">
+                                <label class="block text-gray-700 text-sm font-bold mb-2" for="subject">
+                                Subject
+                                </label>
+                                <input
+                                class="w-full px-3 py-2 border laptop:h-[50px] desktop:h-[60px] border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                id="subject"
+                                type="text"
+                                placeholder="Select Subject"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full h-[50%] flex flex-col laptop:px-[20px]">
+                        <div class="mb-6">
+                            <label class="block text-gray-700 text-sm font-bold mb-2" for="message">
+                            Message
+                            </label>
+                            <textarea
+                            class="w-full px-3 py-2 border laptop:h-[115px] desktop:h-[138px] border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            id="message"
+                            rows="4"
+                            placeholder="Write your  question here"
+                            ></textarea>
+                        </div>
+    
+                        <div class="flex justify-between">
+                            <button
+                            class="laptop:w-[205px] mobile:text-[10px] mobile:mb-2 laptop:mb-0 laptop:h-[50px] desktop:w-[254px] desktop:h-[64px] bg-[#282938] cursor-pointer tablet:text-[14px] text-white font-semibold py-2 px-4 rounded-[41px] font-['Poppins']"
+                            type="submit"
+                            >
+                            Send Messege
+                            </button>
+                        </div>
+                    </div>  
+                </div>
+            </form>
+        </div>
+        <!-- #endregion -->
+
+        <!-- #region spase-->
+        <div class="w-full mobile:h-[100px] laptop:h-auto"></div>
+        <!-- #endregion -->
+
+        <!-- #region footer-->
+        <footer class="w-full mobile:h-auto laptop:h-[390px] desktop:[490px] flex flex-col ">
+            <div class="bg-[#1c1e53] w-full mobile:h-auto laptop:h-[315px] desktop:h-[400px] flex justify-center items-center">
+                <div class="flex mobile:flex-col laptop:flex-row h-full mobile:w-full laptop:w-[1024px] desktop:w-[80%]">
+                    <div class="relative mobile:w-full mobile:h-[50%] laptop:w-[50%] laptop:h-full">
+                        <div class="laptop:h-[315px] desktop:h-[318px] mobile:pt-[40px] laptop:pt-0">
+                            <div class="w-full h-[60%] flex flex-col justify-end pb-[10px] gap-[20px] mobile:items-center laptop:items-start">
+                                <img src="./public/images/icon.svg" class="w-[160px]" alt="">
+                                <p class="mobile:text-center laptop:text-start w-[400px] font-['Poppins'] font-medium text-[16px] leading-7 text-[#FFFFFF]">We are always open to discuss your project and improve your online presence.</p>
+                            </div>
+                            <div class="w-full h-[40%] flex items-end mobile:justify-center laptop:justify-start">
+                                <div class=" bg-[#FCD980] mobile:w-[417px] mobile:h-[75px] desktop:w-[517px] desktop:h-[95px] flex">
+                                    <div class="w-[50%] h-full flex flex-col justify-center">
+                                        <h2 class="pl-[20px] font-['Poppins'] mobile:text-[12px] laptop:text-[16px] font-normal leading-7 text-[#282938]">Email me at</h2>
+                                        <h2 class="pl-[20px] font-['Poppins'] mobile:text-[12px] laptop:text-[16px] font-normal leading-7 text-[#282938] opacity-70">contact@website.com</h2>
+                                    </div>
+                                    <div class="w-[50%] h-full flex flex-col justify-center">
+                                        <h2 class="pl-[20px] font-['Poppins'] mobile:text-[12px] laptop:text-[16px] font-normal leading-7 text-[#282938]">Call us</h2>
+                                        <h2 class="pl-[20px] font-['Poppins'] mobile:text-[12px] laptop:text-[16px] font-normal leading-7 text-[#282938] opacity-70">0927 6277 28525</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mobile:w-full mobile:h-auto laptop:w-[50%] laptop:h-full flex flex-col justify-center">
+                        <div class=" flex flex-col justify-center mobile:items-center laptop:items-start">
+                            <h1 class="text-white mobile:mt-[40px] laptop:mt-0 font-['Poppins'] mobile:text-[40px] mobile:font-semibold mobile:leading-[54px] desktop:text-[48px] desktop:font-semibold desktop:leading-[64px]">Lets Talk!</h1>
+                            <p class="mobile:text-center laptop:text-start pt-[10px] w-[400px] font-['Poppins'] font-normal text-[16px] leading-7 text-[#F4F6FC]">We are always open to discuss your project, improve your online presence and help with your UX/UI design challenges.</p>
+                            <div class="mt-[28px] w-[50%] h-[20px] flex gap-[26px] mobile:justify-center laptop:justify-start">
+                                <img src="./public/images/footer/img-4.png" alt="" class="w-[16px] h-[16px] cursor-pointer">
+                                <img src="./public/images/footer/img-3.png" alt="" class="w-[16px] h-[16px] cursor-pointer">
+                                <img src="./public/images/footer/img-2.png" alt="" class="w-[16px] h-[16px] cursor-pointer">
+                                <img src="./public/images/footer/img-1.png" alt="" class="w-[16px] h-[16px] cursor-pointer">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white w-full mobile:h-100px laptop:h-[75px] desktop:h-[90px] flex justify-center items-center">
+                <div class="flex mobile:flex-col laptop:flex-row laptop:h-full mobile:w-full mobile:h-[100px] laptop:w-[1024px] desktop:w-[80%]">
+                    <div class="mobile:w-full mobile:h-[50%] laptop:w-[50%] laptop:h-full flex items-center mobile:justify-center laptop:justify-start">
+                        <a href="#" class="font-['Poppins'] mobile:text-[12px] tablet:text-[16px] text-[#282938] leading-7 font-medium">Copyright 2021, Finsweet.com</a>
+                    </div>
+                    <div class="mobile:w-full mobile:h-[50%] laptop:w-[50%] laptop:h-full flex items-center justify-center gap-[20px]">
+                        <a href="./index.html" class="dark:hover:text-[#de4558] block text-[#282938] mobile:text-[12px] tablet:text-[16px] hover:text-[#1c1e53] transition-all duration-300 ease-linear font-['Poppins']">Home</a>
+                        <a href="./aboutus.html" class="dark:hover:text-[#de4558] block text-[#282938] mobile:text-[12px] tablet:text-[16px] hover:text-[#1c1e53] transition-all duration-300 ease-linear font-['Poppins']">About us</a>
+                        <a href="./features.html" class="dark:hover:text-[#de4558] block text-[#282938] mobile:text-[12px] tablet:text-[16px] hover:text-[#1c1e53] transition-all duration-300 ease-linear font-['Poppins']">Features</a>
+                        <a href="./pricing.html" class="dark:hover:text-[#de4558] block text-[#282938] mobile:text-[12px] tablet:text-[16px] hover:text-[#1c1e53] transition-all duration-300 ease-linear font-['Poppins'] ">Pricing</a>
+                        <a href="#" class="dark:hover:text-[#de4558] block text-[#282938] mobile:text-[12px] tablet:text-[16px] hover:text-[#1c1e53] transition-all duration-300 ease-linear font-['Poppins']">FAQ</a>
+                        <a href="#" class="dark:hover:text-[#de4558] block text-[#282938] mobile:text-[12px] tablet:text-[16px] hover:text-[#1c1e53] transition-all duration-300 ease-linear font-['Poppins'] ">Blog</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- #endregion -->
+
+    <script>
+        // Toggle mobile menu
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            var mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+        let btn=document.querySelector(".btn")
+        btn.addEventListener("click", function(){
+        document.body.setAttribute("data-theme", "dark")
+        })
+    </script>
+</body>
+</html>
