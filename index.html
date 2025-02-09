@@ -4,15 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./src/css/main.css">
+  <link rel="stylesheet" href="./src/css/swiper.css">
   <link
   rel="shortcut icon"
   href="./public/images/log.svg"
   type="image/x-icon"
   />
+  <link rel="stylesheet" href="./swiper/swiper-bundle.min.css" class="">
   <title>Finsweet</title>
 </head>
 <body>
-
+  
   <!-- #region project-->
   <div class="wrapper">
     
@@ -280,6 +282,53 @@
      </section>
     <!-- #endregion -->
      
+    <!-- #region test-->
+     <!-- <section class="bg-[#F9FAFD] mobile:px-[20px] tablet:px-0 w-full mobile:h-auto laptop:h-[406px] desktop:h-[506px] flex justify-center">
+        <div class="bg-amber-100 h-full mobile:w-full tablet:w-[715px] laptop:w-[1025px] desktop:w-[80%] flex mobile:flex-col laptop:flex-row">
+          <div class="bg-amber-600 mobile:w-full mobile:h-[34%] laptop:w-[34%] laptop:h-full">
+            <h1 class="font-['Poppins'] text-[#282938] font-semibold mobile:text-[28px] desktop:text-[38px] mobile:w-[250px] desktop:w-[327px] desktop:leading-14">What our clients say about us</h1>
+            <p class="mobile:mt-[10px] desktop:mt-[15px] font-['Poppins'] text-[#282938] opacity-70 font-normal mobile:text-[14px] desktop:text-[16px] mobile:w-[250px] desktop:w-[327px] desktop:leading-7">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed.</p>
+          </div>
+          <div class="bg-amber-950 mobile:w-full mobile:h-[66%] laptop:w-[66%] laptop:h-full flex items-center">
+
+          </div>
+        </div>
+     </section> -->
+    <!-- #endregion -->
+    <!-- Swiper -->
+    <!-- <div class="swiper mySwiper mobile:h-[205px] desktop:h-[250px]">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="w-full h-full flex flex-col justify-between">
+          <div class="bg-blue-300 w-full mobile:h-[120px] desktop:h-[144px]">
+            <p class="font-['Poppins'] text-[#282938] mobile:text-[22px] desktop:text-[32px] font-medium mobile:leading-8 desktop:leading-12">
+              "The best agency we’ve worked with so far. They understand our product and are able to add new features with a great focus."
+            </p>
+          </div>
+          <div class="bg-amber-300 w-full h-[64px]">
+            
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">Slide 2</div>
+      <div class="swiper-slide">Slide 3</div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    </div> -->
+
+    <!-- #region test-->
+    <!-- <section class="bg-[#F9FAFD] mobile:px-[20px] tablet:px-0 w-full mobile:h-auto laptop:h-[406px] desktop:h-[506px] flex justify-center">
+      <div class="bg-amber-100 h-full mobile:w-full tablet:w-[715px] laptop:w-[1025px] desktop:w-[80%] flex mobile:flex-col laptop:flex-row">
+        <div class="bg-amber-600 mobile:w-full mobile:h-[34%] laptop:w-[34%] laptop:h-full">
+          <h1 class="font-['Poppins'] text-[#282938] font-semibold mobile:text-[28px] desktop:text-[38px] mobile:w-[250px] desktop:w-[327px] desktop:leading-14">Frequently asked questions</h1>
+          <p class="mobile:mt-[10px] desktop:mt-[15px] font-['Poppins'] text-[#2405F2] font-normal mobile:text-[14px] desktop:text-[16px] mobile:w-[250px] desktop:w-[327px] desktop:leading-7">Contact us for more info</p>
+        </div>
+        <div class="bg-amber-950 mobile:w-full mobile:h-[66%] laptop:w-[66%] laptop:h-full"></div>
+      </div>
+    </section> -->
+    <!-- #endregion -->    
+
     <!-- #region contact form-->
      <section class="mobile:px-[20px] tablet:px-0 w-full mobile:h-auto laptop:h-[730px] desktop:h-[867px] flex items-center justify-center">
         <div class="bg-[#1C1E53] mobile:w-full tablet:w-[715px] laptop:w-[1025px] desktop:w-[80%] h-auto laptop:h-[560px] desktop:h-[691px] flex mobile:flex-col laptop:flex-row items-center mobile:py-[60px] laptop:py-0">
@@ -432,7 +481,7 @@
 
   </div>
   <!-- #endregion -->
-
+  <script src="./swiper/swiper-bundle.min.js"></script>
   <script>
     // Toggle mobile menu
     document.getElementById('menu-toggle').addEventListener('click', function() {
@@ -440,11 +489,21 @@
         mobileMenu.classList.toggle('hidden');
     });
 
-      let btn=document.querySelector(".btn")
-      btn.addEventListener("click", function(){
-        document.body.setAttribute("data-theme", "dark")
-      })
+    let btn=document.querySelector(".btn")
+    btn.addEventListener("click", function(){
+      document.body.setAttribute("data-theme", "dark")
+    })
+
+    var swiper = new Swiper(".mySwiper", {
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+      },
+    });
+
+
   </script>
+
 </body>
 </html>
 
