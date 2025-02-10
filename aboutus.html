@@ -11,74 +11,74 @@
     type="image/x-icon"
     />
 </head>
-<body>
+<body data-theme="light" class="dark:bg-[#1b1b1f]">
     
     <!-- #region project-->
     <div class="wrapper">
         
     <!-- #region header-->
-    <header class="sticky top-0 left-0 z-[100000] bg-[#1C1E53] w-full mobile:h-[66px] desktop:h-[92px] flex items-center justify-center">
-        <div class="flex mobile:w-full mobile:h-full mobile:mx-[20px] tablet:w-[715px] tablet:h-full tablet:mx-[100px] laptop:w-[1025px] laptop:h-full laptop:mx-[130px] desktop:w-[80%] desktop:h-full desktop:mx-[160px]">
-            <div class="h-full mobile:w-[50%] tablet:w-[20%] flex items-center mobile:justify-center tablet:justify-start">
-                <img src="./public/images/icon.svg" class="w-[122px]" alt="">
-            </div>
-            <div class="h-full mobile:w-[50%] tablet:w-[80%] flex items-center justify-end gap-[30px]">
-                <div class="w-fit h-[30px] mobile:hidden tablet:block">
-                    <a href="./index.html" class="hover:text-white transition-all duration-300 ease-linear font-[Poppins] font-medium mobile:text-[12px] laptop:text-[16px] leading-7 text-[#BBBBCB]">Home</a>
-                </div>
-                <div class="w-fit h-[30px] mobile:hidden tablet:block">
-                    <a href="./aboutus.html" class="hover:text-white transition-all duration-300 ease-linear font-[Poppins] font-medium mobile:text-[12px] laptop:text-[16px] leading-7 text-[#BBBBCB]">About us</a>
-                </div>
-                <div class="w-fit h-[30px] mobile:hidden tablet:block">
-                    <a href="./features.html" class="hover:text-white transition-all duration-300 ease-linear font-[Poppins] font-medium mobile:text-[12px] laptop:text-[16px] leading-7 text-[#BBBBCB]">Features</a>
-                </div>
-                <div class="w-fit h-[30px] mobile:hidden tablet:block">
-                    <a href="./pricing.html" class="hover:text-white transition-all duration-300 ease-linear font-[Poppins] font-medium mobile:text-[12px] laptop:text-[16px] leading-7 text-[#BBBBCB]">Pricing</a>
-                </div>
-                <div class="w-fit h-[30px] mobile:hidden tablet:block">
-                    <a href="#" class="hover:text-white transition-all duration-300 ease-linear font-[Poppins] font-medium mobile:text-[12px] laptop:text-[16px] leading-7 text-[#BBBBCB]">FAQ</a>
-                </div>
-                <div class="w-fit h-[30px] mobile:hidden tablet:block">
-                    <a href="#" class="hover:text-white transition-all duration-300 ease-linear font-[Poppins] font-medium mobile:text-[12px] laptop:text-[16px] leading-7 text-[#BBBBCB]">Blog</a>
-                </div>
-                <a href="./contactus.html">
-                    <button class="cursor-pointer mobile:w-[80px] tablet:w-[100px] laptop:w-[145px] laptop:h-[45px] desktop:w-[185px] desktop:h-[60px] rounded-[41px] border-solid border-[#F4F6FC33] border-[2px] hover:bg-white hover:border-[#2b2b2b] transition-all duration-300 ease-linear ">
-                        <h2 class="hover:text-[#2b2b2b] transition-all duration-300 ease-linear font-[Poppins] font-medium mobile:text-[12px] laptop:text-[16px] leading-7 text-white">Contact us</h2>
-                    </button>
-                </a>
-            </div>
+    <header class="sticky top-0 left-0 z-[100000] dark:bg-[#0f0f0f] bg-[#1C1E53] w-full mobile:h-[66px] desktop:h-[92px] flex items-center justify-center">
+    <div class="flex mobile:w-full mobile:h-full mobile:mx-[20px] tablet:w-[715px] tablet:h-full tablet:mx-[100px] laptop:w-[1025px] laptop:h-full laptop:mx-[130px] desktop:w-[80%] desktop:h-full desktop:mx-[160px]">
+        <div class="h-full mobile:w-[50%] tablet:w-[20%] flex items-center mobile:justify-center tablet:justify-start">
+            <img src="./public/images/icon.svg" class="w-[122px]" alt="">
         </div>
-        <div class="flex tablet:hidden absolute top-[23px] left-[20px]">
-            <button id="menu-toggle" class="desktop:hidden mobile:w-[100%] mobile:h-[20px] mobile:flex mobile:items-center pr-[5px] focus:outline-none">
-                <div class="mobile:w-[25px] mobile:h-[25px] mobile:flex mobile:justify-center mobile:items-center mobile:flex-col mobile:gap-[4px] mobile:cursor-pointer">
-                <div class="mobile:w-[25px] mobile:h-[3px] mobile:bg-white rounded-[5px]"></div>
-                <div class="mobile:w-[25px] mobile:h-[3px] mobile:bg-white rounded-[5px]"></div>
-                <div class="mobile:w-[25px] mobile:h-[3px] mobile:bg-white rounded-[5px]"></div>
-                </div>
-            </button>
-        </div>
-        <div id="mobile-menu" class="hidden bg-[#1C1E53] mobile:w-full tablet:hidden desktop:hidden absolute top-[65px]">
-            <div class="box-border flex flex-col gap-2 pl-[20px]">
-                <a href="./index.html" class="dark:hover:text-[#de4558] block text-[#BBBBCB] text-[12px] hover:text-white transition-all duration-300 ease-linear font-['Poppins']">Home</a>
-                <a href="./aboutus.html" class="dark:hover:text-[#de4558] block text-[#BBBBCB] text-[12px] hover:text-white transition-all duration-300 ease-linear font-['Poppins']">About us</a>
-                <a href="./features.html" class="dark:hover:text-[#de4558] block text-[#BBBBCB] text-[12px] hover:text-white transition-all duration-300 ease-linear font-['Poppins']">Features</a>
-                <a href="./pricing.html" class="dark:hover:text-[#de4558] block text-[#BBBBCB] text-[12px] hover:text-white transition-all duration-300 ease-linear font-['Poppins'] ">Pricing</a>
-                <a href="#" class="dark:hover:text-[#de4558] block text-[#BBBBCB] text-[12px] hover:text-white transition-all duration-300 ease-linear font-['Poppins']">FAQ</a>
-                <a href="#" class="dark:hover:text-[#de4558] block text-[#BBBBCB] text-[12px] hover:text-white transition-all duration-300 ease-linear font-['Poppins'] ">Blog</a>
+        <div class="h-full mobile:w-[50%] tablet:w-[80%] flex items-center justify-end tablet:gap-[10px] laptop:gap-[30px]">
+            <div class="w-fit h-[30px] mobile:hidden tablet:block">
+                <a href="./index.html" class="hover:text-white dark:hover:text-[#646cff] transition-all duration-300 ease-linear font-[Poppins] font-medium mobile:text-[12px] laptop:text-[16px] leading-7 text-[#BBBBCB]">Home</a>
             </div>
+            <div class="w-fit h-[30px] mobile:hidden tablet:block">
+                <a href="./aboutus.html" class="hover:text-white dark:hover:text-[#646cff] transition-all duration-300 ease-linear font-[Poppins] font-medium mobile:text-[12px] laptop:text-[16px] leading-7 text-[#BBBBCB]">About us</a>
+            </div>
+            <div class="w-fit h-[30px] mobile:hidden tablet:block">
+                <a href="./features.html" class="hover:text-white dark:hover:text-[#646cff] transition-all duration-300 ease-linear font-[Poppins] font-medium mobile:text-[12px] laptop:text-[16px] leading-7 text-[#BBBBCB]">Features</a>
+            </div>
+            <div class="w-fit h-[30px] mobile:hidden tablet:block">
+                <a href="./pricing.html" class="hover:text-white dark:hover:text-[#646cff] transition-all duration-300 ease-linear font-[Poppins] font-medium mobile:text-[12px] laptop:text-[16px] leading-7 text-[#BBBBCB]">Pricing</a>
+            </div>
+            <div class="w-fit h-[30px] mobile:hidden tablet:block">
+                <a href="#" class="hover:text-white dark:hover:text-[#646cff] transition-all duration-300 ease-linear font-[Poppins] font-medium mobile:text-[12px] laptop:text-[16px] leading-7 text-[#BBBBCB]">FAQ</a>
+            </div>
+            <div class="w-fit h-[30px] mobile:hidden tablet:block">
+                <a href="#" class="hover:text-white dark:hover:text-[#646cff] transition-all duration-300 ease-linear font-[Poppins] font-medium mobile:text-[12px] laptop:text-[16px] leading-7 text-[#BBBBCB]">Blog</a>
+            </div>
+            <a href="./contactus.html">
+                <button class="font-[Poppins] font-medium mobile:text-[12px] laptop:text-[16px] leading-7 text-[#e3e3e3] hover:text-[#2b2b2b] cursor-pointer mobile:w-[80px] tablet:w-[100px] laptop:w-[145px] laptop:h-[45px] desktop:w-[185px] desktop:h-[60px] rounded-[41px] border-solid border-[#F4F6FC33] border-[2px] hover:bg-white hover:border-[#2b2b2b] transition-all duration-300 ease-linear ">
+                    Contact us
+                </button>
+            </a>
         </div>
+    </div>
+    <div class="flex tablet:hidden absolute top-[23px] left-[20px]">
+        <button id="menu-toggle" class="desktop:hidden mobile:w-[100%] mobile:h-[20px] mobile:flex mobile:items-center pr-[5px] focus:outline-none">
+            <div class="mobile:w-[25px] mobile:h-[25px] mobile:flex mobile:justify-center mobile:items-center mobile:flex-col mobile:gap-[4px] mobile:cursor-pointer">
+            <div class="mobile:w-[25px] mobile:h-[3px] mobile:bg-white rounded-[5px]"></div>
+            <div class="mobile:w-[25px] mobile:h-[3px] mobile:bg-white rounded-[5px]"></div>
+            <div class="mobile:w-[25px] mobile:h-[3px] mobile:bg-white rounded-[5px]"></div>
+            </div>
+        </button>
+    </div>
+    <div id="mobile-menu" class="hidden bg-[#1C1E53] dark:bg-[#0f0f0f] mobile:w-full tablet:hidden desktop:hidden absolute top-[65px]">
+        <div class="box-border flex flex-col gap-2 pl-[20px]">
+            <a href="./index.html" class="dark:hover:text-[#646cff] block text-[#BBBBCB] text-[12px] hover:text-white transition-all duration-300 ease-linear font-['Poppins']">Home</a>
+            <a href="./aboutus.html" class="dark:hover:text-[#646cff] block text-[#BBBBCB] text-[12px] hover:text-white transition-all duration-300 ease-linear font-['Poppins']">About us</a>
+            <a href="./features.html" class="dark:hover:text-[#646cff] block text-[#BBBBCB] text-[12px] hover:text-white transition-all duration-300 ease-linear font-['Poppins']">Features</a>
+            <a href="./pricing.html" class="dark:hover:text-[#646cff] block text-[#BBBBCB] text-[12px] hover:text-white transition-all duration-300 ease-linear font-['Poppins'] ">Pricing</a>
+            <a href="#" class="dark:hover:text-[#646cff] block text-[#BBBBCB] text-[12px] hover:text-white transition-all duration-300 ease-linear font-['Poppins']">FAQ</a>
+            <a href="#" class="dark:hover:text-[#646cff] block text-[#BBBBCB] text-[12px] hover:text-white transition-all duration-300 ease-linear font-['Poppins'] ">Blog</a>
+        </div>
+    </div>
     </header>
-    <!-- #endregion -->
-    
+<!-- #endregion -->
+
     <!-- #region about us-->
         <section class="w-full mobile:h-[700px] tablet:h-[375px] laptop:h-[475px] desktop:h-[656px] flex justify-center">
         <div class="mobile:w-full tablet:w-[715px] laptop:w-[1025px] desktop:w-[80%] h-full flex mobile:flex-col tablet:flex-row justify-center mobile:items-center desktop:items-start">
           <div class="mobile:w-[90%] tablet:w-[50%] h-full flex flex-col justify-center">
-            <h1 class="font-[Poppins] font-normal text-[16px] leading-7 text-[#282938]">About us</h1>
-            <h2 class="font-[Poppins] font-[600] laptop:text-[54px] tablet:text-[40px] mobile:text-[40px] tablet:leading-[54px] laptop:leading-[74px] text-[#282938] mb-[24px] line-clamp-3">
+            <h1 class="font-[Poppins] font-normal text-[16px] leading-7 text-[#282938] dark:text-[#dfdfd6]">About us</h1>
+            <h2 class="dark:text-[#dfdfd6] font-[Poppins] font-[600] laptop:text-[54px] tablet:text-[40px] mobile:text-[40px] tablet:leading-[54px] laptop:leading-[74px] text-[#282938] mb-[24px] line-clamp-3">
                 Our designs solve problems
             </h2>
-            <h2 class="mobile:w-[290px] laptop:w-[390px] desktop:w-[484px] font-[Poppins] font-normal opacity-70 mobile:text-[12px] desktop:text-[16px] mobile:leading-6 desktop:leading-7 text-[#282938]">
+            <h2 class="dark:text-[#9e9e9e] mobile:w-[290px] laptop:w-[390px] desktop:w-[484px] font-[Poppins] font-normal opacity-70 mobile:text-[12px] desktop:text-[16px] mobile:leading-6 desktop:leading-7 text-[#282938]">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
             </h2>
           </div>
@@ -91,20 +91,20 @@
     
     <!-- #region how we are-->
     <section class="w-full mobile:py-[60px] mobile:px-[20px] laptop:py-0 laptop:px-0 mobile:h-auto laptop:h-[665px] desktop:h-[876px] flex justify-center">
-        <div class="bg-[#F4F5F5] mobile:w-full mobile:h-auto tablet:w-[715px] laptop:w-[1025px] laptop:h-[570px] desktop:w-[80%] desktop:h-[716px] flex flex-col">
+        <div class="bg-[#F4F5F5] dark:bg-[#161616] mobile:w-full mobile:h-auto tablet:w-[715px] laptop:w-[1025px] laptop:h-[570px] desktop:w-[80%] desktop:h-[716px] flex flex-col">
             <div class="w-full laptop:h-[50%] mobile:h-auto flex mobile:flex-col laptop:flex-row mobile:p-[65px] desktop:p-[79px]">
                 <div class="mobile:w-full mobile:h-[50%] laptop:w-[50%] laptop:h-full flex flex-col">
-                    <h1 class="font-['Poppins'] text-[#282938] mobile:text-[14px] desktop:text-[16px] font-medium mobile:leading-6 desktop:leading-7">Who we are</h1>
-                    <h1 class="font-['Poppins'] text-[#282938] mobile:text-[24px] desktop:text-[38px] font-semibold mobile:leading-10 desktop:leading-14">Goal focussed</h1>
-                    <p class="font-['Poppins'] opacity-70 text-[#282938] mobile:text-[12px] desktop:text-[16px] font-normal mobile:leading-6 desktop:leading-7 mobile:w-[290px] tablet:w-[412px] desktop:w-[515px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <h1 class="dark:text-[#e3e3e3] font-['Poppins'] text-[#282938] mobile:text-[14px] desktop:text-[16px] font-medium mobile:leading-6 desktop:leading-7">Who we are</h1>
+                    <h1 class="dark:text-[#dfdfd6] font-['Poppins'] text-[#282938] mobile:text-[24px] desktop:text-[38px] font-semibold mobile:leading-10 desktop:leading-14">Goal focussed</h1>
+                    <p class="dark:text-[#9e9e9e] font-['Poppins'] opacity-70 text-[#282938] mobile:text-[12px] desktop:text-[16px] font-normal mobile:leading-6 desktop:leading-7 mobile:w-[290px] tablet:w-[412px] desktop:w-[515px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
                 <div class="mobile:mt-[50px] laptop:mt-[25px] mobile:w-full mobile:h-[50%] laptop:w-[50%] laptop:h-full flex flex-col">
                     <h1 class="font-['Poppins'] text-[#282938] mobile:text-[14px] desktop:text-[16px] font-medium mobile:leading-6 desktop:leading-7"></h1>
-                    <h1 class="font-['Poppins'] text-[#282938] mobile:text-[24px] desktop:text-[38px] font-semibold mobile:leading-10 desktop:leading-14">Continuous improvement</h1>
-                    <p class="font-['Poppins'] opacity-70 text-[#282938] mobile:text-[12px] desktop:text-[16px] font-normal mobile:leading-6 desktop:leading-7 mobile:w-[290px] tablet:w-[412px] desktop:w-[515px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <h1 class="dark:text-[#dfdfd6] font-['Poppins'] text-[#282938] mobile:text-[24px] desktop:text-[38px] font-semibold mobile:leading-10 desktop:leading-14">Continuous improvement</h1>
+                    <p class="dark:text-[#9e9e9e] font-['Poppins'] opacity-70 text-[#282938] mobile:text-[12px] desktop:text-[16px] font-normal mobile:leading-6 desktop:leading-7 mobile:w-[290px] tablet:w-[412px] desktop:w-[515px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
             </div>
-            <div class="bg-amber-950 w-full laptop:h-[50%] mobile:h-auto">
+            <div class="w-full laptop:h-[50%] mobile:h-auto">
                 <img src="./public/images/how-we-are/img-1.png" alt="" class="w-full h-full object-cover">
             </div>
         </div>
@@ -112,50 +112,54 @@
     <!-- #endregion -->
 
     <!-- #region process-->
-    <section class="w-full mobile:px-[20px] desktop:px-0 mobile:h-auto laptop:h-[360px] desktop:h-[588px] flex justify-center items-center">
+    <section class="w-full mobile:px-[20px] desktop:px-0 mobile:h-auto laptop:h-[360px] desktop:h-[500px] flex justify-center mobile:items-center desktop:items-start">
         <div class="mobile:h-auto mobile:my-[60px] laptop:my-0 mobile:w-full tablet:w-[715px] laptop:h-[205px] laptop:w-[1025px] desktop:h-[268px] desktop:w-[80%] flex flex-col items-center mobile:gap-[40px] laptop:gap-0 desktop:justify-between">
             <div class="mobile:h-[75px] desktop:h-[64px] w-full flex justify-center">
-                <h1 class="font-['Poppins'] mobile:text-[30px] tablet:text-[38px] desktop:text-[48px] font-semibold text-[#282938]">The process we follow</h1>
+                <h1 class="dark:text-[#dfdfd6] font-['Poppins'] mobile:text-[30px] tablet:text-[38px] desktop:text-[48px] font-semibold text-[#282938]">The process we follow</h1>
             </div>
             <div class="mobile:h-auto laptop:h-[130px] desktop:h-[156px] mobile:w-full tablet:w-[500px] laptop:w-full flex mobile:flex-col tablet:flex-row items-center justify-center gap-y-[24px] gap-x-[32px] tablet:flex-wrap laptop:flex-nowrap">
                 <div class="mobile:w-[230px] desktop:w-[296px] mobile:h-[130px] laptop:h-full flex flex-col mobile:gap-[20px] desktop:gap-[25px]">
                     <div class="w-full h-[24px] flex gap-[20px]">
-                        <div class="w-[24px] h-[24px] rounded-[50%] bg-[#2405F2]"></div>
-                        <img src="./public/images/line.svg" alt="" class="mobile:w-[180px] desktop:w-[224px]">
+                        <div class="w-[24px] h-[24px] rounded-[50%] bg-[#2405F2] dark:bg-[#646cff]"></div>
+                        <img src="./public/images/line.svg" alt="" class="dark:hidden mobile:w-[180px] desktop:w-[224px]">
+                        <img src="./public/images/dark-img/img-14.svg" alt="" class="hidden dark:block mobile:w-[180px] desktop:w-[224px]">
                     </div>
                     <div class="">
-                        <h2 class="font-['Poppins'] text-[#282938] mobile:text-[18px] desktop:text-[24px] leading-9 font-medium">Planning</h2>
-                        <h2 class="font-['Poppins'] text-[#282938] opacity-70 mobile:w-[176px] desktop:w-[272px] mobile:text-[12px] desktop:text-[16px] mobile:leading-6 desktop:leading-7 font-normal">Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</h2>
+                        <h2 class="dark:text-[#e3e3e3] font-['Poppins'] text-[#282938] mobile:text-[18px] desktop:text-[24px] leading-9 font-medium">Planning</h2>
+                        <h2 class="dark:text-[#9e9e9e] font-['Poppins'] text-[#282938] opacity-70 mobile:w-[176px] desktop:w-[272px] mobile:text-[12px] desktop:text-[16px] mobile:leading-6 desktop:leading-7 font-normal">Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</h2>
                     </div>
                 </div>
                 <div class="mobile:w-[230px] desktop:w-[296px] mobile:h-[130px] laptop:h-full flex flex-col mobile:gap-[20px] desktop:gap-[25px]">
                     <div class="w-full h-[24px] flex gap-[20px]">
-                        <div class="w-[24px] h-[24px] rounded-[50%] bg-[#2405F2]"></div>
-                        <img src="./public/images/line.svg" alt="" class="mobile:w-[180px] desktop:w-[224px]">
+                        <div class="w-[24px] h-[24px] rounded-[50%] bg-[#2405F2] dark:bg-[#646cff]"></div>
+                        <img src="./public/images/line.svg" alt="" class="dark:hidden mobile:w-[180px] desktop:w-[224px]">
+                        <img src="./public/images/dark-img/img-14.svg" alt="" class="hidden dark:block mobile:w-[180px] desktop:w-[224px]">
                     </div>
                     <div class="">
-                        <h2 class="font-['Poppins'] text-[#282938] mobile:text-[18px] desktop:text-[24px] leading-9 font-medium">Conception</h2>
-                        <h2 class="font-['Poppins'] text-[#282938] opacity-70 mobile:w-[176px] desktop:w-[272px] mobile:text-[12px] desktop:text-[16px] mobile:leading-6 desktop:leading-7 font-normal">Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</h2>
+                        <h2 class="dark:text-[#e3e3e3] font-['Poppins'] text-[#282938] mobile:text-[18px] desktop:text-[24px] leading-9 font-medium">Conception</h2>
+                        <h2 class="dark:text-[#9e9e9e] font-['Poppins'] text-[#282938] opacity-70 mobile:w-[176px] desktop:w-[272px] mobile:text-[12px] desktop:text-[16px] mobile:leading-6 desktop:leading-7 font-normal">Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</h2>
                     </div>
                 </div>
                 <div class="mobile:w-[230px] desktop:w-[296px] mobile:h-[130px] laptop:h-full flex flex-col mobile:gap-[20px] desktop:gap-[25px]">
                     <div class="w-full h-[24px] flex gap-[20px]">
-                        <div class="w-[24px] h-[24px] rounded-[50%] bg-[#2405F2]"></div>
-                        <img src="./public/images/line.svg" alt="" class="mobile:w-[180px] desktop:w-[224px]">
+                        <div class="w-[24px] h-[24px] rounded-[50%] bg-[#2405F2] dark:bg-[#646cff]"></div>
+                        <img src="./public/images/line.svg" alt="" class="dark:hidden mobile:w-[180px] desktop:w-[224px]">
+                        <img src="./public/images/dark-img/img-14.svg" alt="" class="hidden dark:block mobile:w-[180px] desktop:w-[224px]">
                     </div>
                     <div class="">
-                        <h2 class="font-['Poppins'] text-[#282938] mobile:text-[18px] desktop:text-[24px] leading-9 font-medium">Design</h2>
-                        <h2 class="font-['Poppins'] text-[#282938] opacity-70 mobile:w-[176px] desktop:w-[272px] mobile:text-[12px] desktop:text-[16px] mobile:leading-6 desktop:leading-7 font-normal">Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</h2>
+                        <h2 class="dark:text-[#e3e3e3] font-['Poppins'] text-[#282938] mobile:text-[18px] desktop:text-[24px] leading-9 font-medium">Design</h2>
+                        <h2 class="dark:text-[#9e9e9e] font-['Poppins'] text-[#282938] opacity-70 mobile:w-[176px] desktop:w-[272px] mobile:text-[12px] desktop:text-[16px] mobile:leading-6 desktop:leading-7 font-normal">Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</h2>
                     </div>
                 </div>
                 <div class="mobile:w-[230px] desktop:w-[296px] mobile:h-[130px] laptop:h-full flex flex-col mobile:gap-[20px] desktop:gap-[25px]">
                     <div class="w-full h-[24px] flex gap-[20px]">
-                        <div class="w-[24px] h-[24px] rounded-[50%] bg-[#2405F2]"></div>
-                        <img src="./public/images/line.svg" alt="" class="mobile:w-[180px] desktop:w-[224px]">
+                        <div class="w-[24px] h-[24px] rounded-[50%] bg-[#2405F2] dark:bg-[#646cff]"></div>
+                        <img src="./public/images/line.svg" alt="" class="dark:hidden mobile:w-[180px] desktop:w-[224px]">
+                        <img src="./public/images/dark-img/img-14.svg" alt="" class="hidden dark:block mobile:w-[180px] desktop:w-[224px]">
                     </div>
                     <div class="">
-                        <h2 class="font-['Poppins'] text-[#282938] mobile:text-[18px] desktop:text-[24px] leading-9 font-medium">Development</h2>
-                        <h2 class="font-['Poppins'] text-[#282938] opacity-70 mobile:w-[176px] desktop:w-[272px] mobile:text-[12px] desktop:text-[16px] mobile:leading-6 desktop:leading-7 font-normal">Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</h2>
+                        <h2 class="dark:text-[#e3e3e3] font-['Poppins'] text-[#282938] mobile:text-[18px] desktop:text-[24px] leading-9 font-medium">Development</h2>
+                        <h2 class="dark:text-[#9e9e9e] font-['Poppins'] text-[#282938] opacity-70 mobile:w-[176px] desktop:w-[272px] mobile:text-[12px] desktop:text-[16px] mobile:leading-6 desktop:leading-7 font-normal">Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</h2>
                     </div>
                 </div>
             </div>
@@ -164,21 +168,21 @@
     <!-- #endregion -->
 
     <!-- #region pictior-->
-    <section class="bg-[#EEF4FA] w-full mobile:h-auto tablet:h-[820px] desktop:h-[1022px] flex items-center justify-center mobile:py-[80px] tablet:py-0">
+    <section class="bg-[#EEF4FA] dark:bg-[#161616] w-full mobile:h-auto tablet:h-[820px] desktop:h-[1022px] flex items-center justify-center mobile:py-[80px] tablet:py-0">
         <div class="h-full mobile:w-full tablet:w-[715px] laptop:w-[1025px] desktop:w-[80%] flex flex-col">
             <div class="w-full mobile:h-auto tablet:h-[50%] flex mobile:flex-col mobile:gap-[40px] tablet:gap-0 tablet:flex-row items-center justify-between mobile:px-[20px] tablet:px-0">
                 <div class="mobile:px-[20px] tablet:px-0 mobile:mt-[40px] tablet:mt-0 mobile:w-[470px] mobile:h-[170px] tablet:w-[290px] tablet:h-[170px] laptop:w-[470px] laptop:h-[170px] desktop:w-[623px] desktop:h-[228px] flex flex-col gap-[5px]">
-                    <h2 class="text-[#282938] font-['Poppins'] font-medium mobile:leading-6 desktop:leading-7 mobile:text-[12px] desktop:text-[16px]">Our Mission</h2>
-                    <h2 class="text-[#282938] font-['Poppins'] font-semibold mobile:leading-10 desktop:leading-14 mobile:text-[20px] laptop:text-[28px] desktop:text-[38px]">Inspire, Innovate, Share</h2>
-                    <h2 class="text-[#282938] font-['Poppins'] font-medium mobile:leading-6 desktop:leading-7 mobile:text-[12px] desktop:text-[16px] opacity-70 line-clamp-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h2>
+                    <h2 class="text-[#282938] dark:text-[#e3e3e3] font-['Poppins'] font-medium mobile:leading-6 desktop:leading-7 mobile:text-[12px] desktop:text-[16px]">Our Mission</h2>
+                    <h2 class="text-[#282938] dark:text-[#dfdfd6] font-['Poppins'] font-semibold mobile:leading-10 desktop:leading-14 mobile:text-[20px] laptop:text-[28px] desktop:text-[38px]">Inspire, Innovate, Share</h2>
+                    <h2 class="text-[#282938] dark:text-[#9e9e9e] font-['Poppins'] font-medium mobile:leading-6 desktop:leading-7 mobile:text-[12px] desktop:text-[16px] opacity-70 line-clamp-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h2>
                 </div>
                 <img src="./public/images/photo/img-1.png" alt="" class="mobile:w-full mobile:h-[270px] tablet:w-[330px] tablet:h-[210px] laptop:w-[410px] laptop:h-[270px] object-cover desktop:w-[515px] desktop:h-[336px]">
             </div>
             <div class="w-full mobile:h-auto tablet:h-[50%] flex mobile:flex-col mobile:gap-[40px] tablet:gap-0 tablet:flex-row-reverse items-center justify-between mobile:px-[20px] tablet:px-0">
                 <div class="mobile:px-[20px] tablet:px-0 mobile:mt-[40px] tablet:mt-0 mobile:w-[470px] mobile:h-[170px] tablet:w-[290px] tablet:h-[170px] laptop:w-[470px] laptop:h-[170px] desktop:w-[623px] desktop:h-[228px] flex flex-col gap-[5px]">
-                    <h2 class="text-[#282938] font-['Poppins'] font-medium mobile:leading-6 desktop:leading-7 mobile:text-[12px] desktop:text-[16px]">Our Vision</h2>
-                    <h2 class="text-[#282938] font-['Poppins'] font-semibold mobile:leading-10 desktop:leading-14 mobile:text-[20px] laptop:text-[28px] desktop:text-[38px]">Laser focus</h2>
-                    <h2 class="text-[#282938] font-['Poppins'] font-medium mobile:leading-6 desktop:leading-7 mobile:text-[12px] desktop:text-[16px] opacity-70 line-clamp-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h2>
+                    <h2 class="text-[#282938] dark:text-[#e3e3e3] font-['Poppins'] font-medium mobile:leading-6 desktop:leading-7 mobile:text-[12px] desktop:text-[16px]">Our Vision</h2>
+                    <h2 class="text-[#282938] dark:text-[#dfdfd6] font-['Poppins'] font-semibold mobile:leading-10 desktop:leading-14 mobile:text-[20px] laptop:text-[28px] desktop:text-[38px]">Laser focus</h2>
+                    <h2 class="text-[#282938] dark:text-[#9e9e9e] font-['Poppins'] font-medium mobile:leading-6 desktop:leading-7 mobile:text-[12px] desktop:text-[16px] opacity-70 line-clamp-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h2>
                 </div>
                 <img src="./public/images/photo/img-2.png" alt="" class="mobile:w-full mobile:h-[270px] tablet:w-[330px] tablet:h-[210px] laptop:w-[410px] laptop:h-[270px] object-cover desktop:w-[515px] desktop:h-[336px]">
             </div>
@@ -187,92 +191,106 @@
     <!-- #endregion -->
 
     <!-- #region benfits-->
-    <section class="bg-white w-full mobile:h-auto laptop:h-[670px] desktop:h-[944px] flex items-center justify-center">
+    <section class="bg-white dark:bg-[#1b1b1f] w-full mobile:h-auto laptop:h-[670px] desktop:h-[944px] flex items-center justify-center">
         <div class="mobile:py-[100px] laptop:py-0 mobile:h-auto mobile:w-full laptop:w-[1025px] laptop:h-[500px] desktop:w-[80%] desktop:h-[624px] flex flex-col items-center justify-between">
-            <h1 class="font-['Poppins'] mobile:pb-[40px] laptop:pb-0  text-[#282938] mobile:text-[28px] laptop:text-[38px] desktop:text-[48px] desktop:leading-[64px] mobile:leading-[54px] font-semibold mobile:w-[325px] laptop:w-[450px] desktop:w-[630px] text-center">The benefits of working with us</h1>
+            <h1 class="dark:text-[#dfdfd6] font-['Poppins'] mobile:pb-[40px] laptop:pb-0 text-[#282938] mobile:text-[28px] laptop:text-[38px] desktop:text-[48px] desktop:leading-[64px] mobile:leading-[54px] font-semibold mobile:w-[325px] laptop:w-[450px] desktop:w-[630px] text-center">The benefits of working with us</h1>
             <div class="w-full mobile:h-auto tablet:w-[690px] laptop:w-full laptop:h-[250px] desktop:h-[316px] flex mobile:flex-col tablet:flex-row items-center justify-center gap-y-[24px] gap-x-[32px] mobile:flex-wrap laptop:flex-nowrap">
-                <div class="bg-[#F4F6FC] mobile:p-[40px] desktop:p-0 mobile:w-[325px] mobile:h-[250px] desktop:w-[395px] desktop:h-full">
-                    <img class="mobile:pl-0 mobile:pt-0 desktop:pl-[48px] desktop:pt-[58px]" src="public/images/card/svg-6.svg" alt="">
-                    <h2 class="line-clamp-1 tablet:w-[314.75px] mobile:pt-[6px] desktop:pt-[12px] font-['Poppins'] font-normal mobile:text-[20px] desktop:text-[24px] leading-9 text-[#282938] pt-[22.08px] text-start mx-auto">
+                <div class="bg-[#F4F6FC] dark:bg-[#202127] dark:rounded-[15px] mobile:p-[40px] desktop:p-0 mobile:w-[325px] mobile:h-[250px] desktop:w-[395px] desktop:h-full">
+                    <img class="mobile:pl-0 mobile:pt-0 desktop:pl-[48px] desktop:pt-[58px] dark:hidden" src="public/images/card/svg-6.svg" alt="">
+                    <img class="mobile:pl-0 mobile:pt-0 desktop:pl-[48px] desktop:pt-[58px] hidden dark:block" src="public/images/dark-img/img-6.svg" alt="">
+                    <h2 class="dark:text-[#e3e3e3] line-clamp-1 tablet:w-[314.75px] mobile:pt-[6px] desktop:pt-[12px] font-['Poppins'] font-normal mobile:text-[20px] desktop:text-[24px] leading-9 text-[#282938] pt-[22.08px] text-start mx-auto">
                         Customize with ease
                     </h2>
-                    <p class="tablet:w-[250px] desktop:w-[324.08px] font-['Poppins'] font-normal mobile:text-[14px] desktop:text-[16px] mobile:leading-6 desktop:leading-7 text-[#282938] opacity-[70%] mobile:pt-[6px] desktop:pt-[12px] text-start mx-auto">
+                    <p class="dark:text-[#9e9e9e] tablet:w-[250px] desktop:w-[324.08px] font-['Poppins'] font-normal mobile:text-[14px] desktop:text-[16px] mobile:leading-6 desktop:leading-7 text-[#282938] opacity-[70%] mobile:pt-[6px] desktop:pt-[12px] text-start mx-auto">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim.
                     </p>
                 </div>
-                <div class="bg-[#F4F6FC] mobile:p-[40px] desktop:p-0 mobile:w-[325px] mobile:h-[250px] desktop:w-[395px] desktop:h-full">
-                    <img class="mobile:pl-0 mobile:pt-0 desktop:pl-[48px] desktop:pt-[58px]" src="public/images/card/svg-3.svg" alt="">
-                    <h2 class="line-clamp-1 tablet:w-[314.75px] mobile:pt-[6px] desktop:pt-[12px] font-['Poppins'] font-normal mobile:text-[20px] desktop:text-[24px] leading-9 text-[#282938] pt-[22.08px] text-start mx-auto">
+                <div class="bg-[#F4F6FC] dark:bg-[#202127] dark:rounded-[15px] mobile:p-[40px] desktop:p-0 mobile:w-[325px] mobile:h-[250px] desktop:w-[395px] desktop:h-full">
+                    <img class="mobile:pl-0 mobile:pt-0 desktop:pl-[48px] desktop:pt-[58px] dark:hidden" src="public/images/card/svg-3.svg" alt="">
+                    <img class="mobile:pl-0 mobile:pt-0 desktop:pl-[48px] desktop:pt-[58px] hidden dark:block" src="public/images/dark-img/img-3.svg" alt="">
+                    <h2 class="dark:text-[#e3e3e3] line-clamp-1 tablet:w-[314.75px] mobile:pt-[6px] desktop:pt-[12px] font-['Poppins'] font-normal mobile:text-[20px] desktop:text-[24px] leading-9 text-[#282938] pt-[22.08px] text-start mx-auto">
                         Perfectly Responsive
                     </h2>
-                    <p class="tablet:w-[250px] desktop:w-[324.08px] font-['Poppins'] font-normal mobile:text-[14px] desktop:text-[16px] mobile:leading-6 desktop:leading-7 text-[#282938] opacity-[70%] mobile:pt-[6px] desktop:pt-[12px] text-start mx-auto">
+                    <p class="dark:text-[#9e9e9e] tablet:w-[250px] desktop:w-[324.08px] font-['Poppins'] font-normal mobile:text-[14px] desktop:text-[16px] mobile:leading-6 desktop:leading-7 text-[#282938] opacity-[70%] mobile:pt-[6px] desktop:pt-[12px] text-start mx-auto">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim.
                     </p>
                 </div>
-                <div class="bg-[#F4F6FC] mobile:p-[40px] desktop:p-0 mobile:w-[325px] mobile:h-[250px] desktop:w-[395px] desktop:h-full">
-                    <img class="mobile:pl-0 mobile:pt-0 desktop:pl-[48px] desktop:pt-[58px]" src="public/images/card/svg-1.svg" alt="">
-                    <h2 class="line-clamp-1 tablet:w-[314.75px] mobile:pt-[6px] desktop:pt-[12px] font-['Poppins'] font-normal mobile:text-[20px] desktop:text-[24px] leading-9 text-[#282938] pt-[22.08px] text-start mx-auto">
+                <div class="bg-[#F4F6FC] dark:bg-[#202127] dark:rounded-[15px] mobile:p-[40px] desktop:p-0 mobile:w-[325px] mobile:h-[250px] desktop:w-[395px] desktop:h-full">
+                    <img class="mobile:pl-0 mobile:pt-0 desktop:pl-[48px] desktop:pt-[58px] dark:hidden" src="public/images/card/svg-1.svg" alt="">
+                    <img class="mobile:pl-0 mobile:pt-0 desktop:pl-[48px] desktop:pt-[58px] hidden dark:block" src="public/images/dark-img/img-1.svg" alt="">
+                    <h2 class="dark:text-[#e3e3e3] line-clamp-1 tablet:w-[314.75px] mobile:pt-[6px] desktop:pt-[12px] font-['Poppins'] font-normal mobile:text-[20px] desktop:text-[24px] leading-9 text-[#282938] pt-[22.08px] text-start mx-auto">
                         Friendly Support
                     </h2>
-                    <p class="tablet:w-[250px] desktop:w-[324.08px] font-['Poppins'] font-normal mobile:text-[14px] desktop:text-[16px] mobile:leading-6 desktop:leading-7 text-[#282938] opacity-[70%] mobile:pt-[6px] desktop:pt-[12px] text-start mx-auto">
+                    <p class="dark:text-[#9e9e9e] tablet:w-[250px] desktop:w-[324.08px] font-['Poppins'] font-normal mobile:text-[14px] desktop:text-[16px] mobile:leading-6 desktop:leading-7 text-[#282938] opacity-[70%] mobile:pt-[6px] desktop:pt-[12px] text-start mx-auto">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim.
                     </p>
                 </div>
             </div>
             <div class="mobile:hidden laptop:flex w-full laptop:h-[55px] desktop:h-[84px] flex  justify-between items-center">
                 <div class="flex flex-col">
-                    <h2 class="font-['Poppins'] laptop:text-[28px] laptop:leading-10 desktop:leading-14 font-semibold desktop:text-[38px]">100.000+</h2>
-                    <h2 class="font-['Poppins'] laptop:text-[12px] laptop:leading-6 desktop:leading-7 font-normal opacity-70 desktop:text-[16px]">Finsweet Users</h2>
+                    <h2 class="dark:text-[#e3e3e3] font-['Poppins'] laptop:text-[28px] laptop:leading-10 desktop:leading-14 font-semibold desktop:text-[38px]">100.000+</h2>
+                    <h2 class="dark:text-[#9e9e9e] font-['Poppins'] laptop:text-[12px] laptop:leading-6 desktop:leading-7 font-normal opacity-70 desktop:text-[16px]">Finsweet Users</h2>
                 </div>
-                <img src="./public/images/card-2/img-1.svg" alt="" class="laptop:w-[110px] laptop:h-[25px] desktop:w-[161px] desktop:h-[32px]">
-                <img src="./public/images/card-2/img-2.svg" alt="" class="laptop:w-[110px] laptop:h-[25px] desktop:w-[161px] desktop:h-[32px]">
-                <img src="./public/images/card-2/img-5.svg" alt="" class="laptop:w-[110px] laptop:h-[25px] desktop:w-[161px] desktop:h-[32px]">
-                <img src="./public/images/card-2/img-4.svg" alt="" class="laptop:w-[110px] laptop:h-[25px] desktop:w-[161px] desktop:h-[32px]">
-                <img src="./public/images/card-2/img-3.svg" alt="" class="laptop:w-[110px] laptop:h-[25px] desktop:w-[161px] desktop:h-[32px]">
+                <img src="./public/images/card-2/img-1.svg" alt="" class="dark:hidden laptop:w-[110px] laptop:h-[25px] desktop:w-[161px] desktop:h-[32px]">
+                <img src="./public/images/dark-img/img-7.svg" alt="" class="hidden dark:block laptop:w-[110px] laptop:h-[25px] desktop:w-[161px] desktop:h-[32px]">
+                <img src="./public/images/card-2/img-2.svg" alt="" class="dark:hidden laptop:w-[110px] laptop:h-[25px] desktop:w-[161px] desktop:h-[32px]">
+                <img src="./public/images/dark-img/img-8.svg" alt="" class="hidden dark:block laptop:w-[110px] laptop:h-[25px] desktop:w-[161px] desktop:h-[32px]">
+                <img src="./public/images/card-2/img-5.svg" alt="" class="dark:hidden laptop:w-[110px] laptop:h-[25px] desktop:w-[161px] desktop:h-[32px]">
+                <img src="./public/images/dark-img/img-9.svg" alt="" class="hidden dark:block laptop:w-[110px] laptop:h-[25px] desktop:w-[161px] desktop:h-[32px]">
+                <img src="./public/images/card-2/img-4.svg" alt="" class="dark:hidden laptop:w-[110px] laptop:h-[25px] desktop:w-[161px] desktop:h-[32px]">
+                <img src="./public/images/dark-img/img-10.svg" alt="" class="hidden dark:block laptop:w-[110px] laptop:h-[25px] desktop:w-[161px] desktop:h-[32px]">
+                <img src="./public/images/card-2/img-3.svg" alt="" class="dark:hidden laptop:w-[110px] laptop:h-[25px] desktop:w-[161px] desktop:h-[32px]">
+                <img src="./public/images/dark-img/img-11.svg" alt="" class="hidden dark:block laptop:w-[110px] laptop:h-[25px] desktop:w-[161px] desktop:h-[32px]">
             </div>
         </div>
     </section>
     <!-- #endregion -->
 
     <!-- #region team-->
-    <section class="bg-[#F4F6FC] flex justify-center w-full mobile:h-auto laptop:h-[565px] desktop:h-[712px]">
+    <section class="bg-[#F4F6FC] dark:bg-[#161616] flex justify-center w-full mobile:h-auto laptop:h-[565px] desktop:h-[712px]">
         <div class="mobile:py-[40px] laptop:py-0 mobile:w-full h-auto laptop:w-[1025px] desktop:w-[80%] flex flex-col gap-[40px] items-center justify-center">
-            <h1 class="font-['Poppins'] text-[#282938] mobile:text-[38px] desktop:text-[48px] font-semibold leading-[64px]">Meet our team</h1>
+            <h1 class="dark:text-[#dfdfd6] font-['Poppins'] text-[#282938] mobile:text-[38px] desktop:text-[48px] font-semibold leading-[64px]">Meet our team</h1>
             <div class="flex mobile:flex-col tablet:flex-row items-center justify-center gap-y-[24px] gap-x-[32px] mobile:w-full mobile:h-auto tablet:w-[520px] laptop:w-full laptop:h-[275px] desktop:h-[344px] tablet:flex-wrap laptop:flex-nowrap">
-                <div class="bg-white mobile:h-[275px] desktop:h-[344px] mobile:w-[240px] desktop:w-[296px] mobile:p-[40px] desktop:p-[60px] flex flex-col items-center">
+                <div class="bg-white mobile:h-[275px] dark:bg-[#202127] dark:rounded-[15px] desktop:h-[344px] mobile:w-[240px] desktop:w-[296px] mobile:p-[40px] desktop:p-[60px] flex flex-col items-center">
                     <img src="./public/images/team/img-1.png" class="rounded-[50%] mobile:w-[130px] mobile:h-[130px] desktop:w-[168px] desktop:h-[168px]" alt="">
-                    <h2 class="pt-[20px] font-['Poppins'] text-[#1D2130] font-normal mobile:text-[20px] desktop:text-[24px] leading-9">John Smith</h2>
-                    <h2 class="font-['Poppins'] opacity-70 text-[#1D2130] font-normal mobile:text-[14px] desktop:text-[16px] leading-7">CEO</h2>
+                    <h2 class="dark:text-[#e3e3e3] pt-[20px] font-['Poppins'] text-[#1D2130] font-normal mobile:text-[20px] desktop:text-[24px] leading-9">John Smith</h2>
+                    <h2 class="dark:text-[#9e9e9e] font-['Poppins'] opacity-70 text-[#1D2130] font-normal mobile:text-[14px] desktop:text-[16px] leading-7">CEO</h2>
                 </div>
-                <div class="bg-white mobile:h-[275px] desktop:h-[344px] mobile:w-[240px] desktop:w-[296px] mobile:p-[40px] desktop:p-[60px] flex flex-col items-center">
+                <div class="bg-white mobile:h-[275px] dark:bg-[#202127] dark:rounded-[15px] desktop:h-[344px] mobile:w-[240px] desktop:w-[296px] mobile:p-[40px] desktop:p-[60px] flex flex-col items-center">
                     <img src="./public/images/team/img-2.png" class="rounded-[50%] mobile:w-[130px] mobile:h-[130px] desktop:w-[168px] desktop:h-[168px]" alt="">
-                    <h2 class="pt-[20px] font-['Poppins'] text-[#1D2130] font-normal mobile:text-[20px] desktop:text-[24px] leading-9">Simon Adams</h2>
-                    <h2 class="font-['Poppins'] opacity-70 text-[#1D2130] font-normal mobile:text-[14px] desktop:text-[16px] leading-7">CTO</h2>
+                    <h2 class="dark:text-[#e3e3e3] pt-[20px] font-['Poppins'] text-[#1D2130] font-normal mobile:text-[20px] desktop:text-[24px] leading-9">Simon Adams</h2>
+                    <h2 class="dark:text-[#9e9e9e] font-['Poppins'] opacity-70 text-[#1D2130] font-normal mobile:text-[14px] desktop:text-[16px] leading-7">CTO</h2>
                 </div>
-                <div class="bg-white mobile:h-[275px] desktop:h-[344px] mobile:w-[240px] desktop:w-[296px] mobile:p-[40px] desktop:p-[60px] flex flex-col items-center">
+                <div class="bg-white mobile:h-[275px] dark:bg-[#202127] dark:rounded-[15px] desktop:h-[344px] mobile:w-[240px] desktop:w-[296px] mobile:p-[40px] desktop:p-[60px] flex flex-col items-center">
                     <img src="./public/images/team/img-3.png" class="rounded-[50%] mobile:w-[130px] mobile:h-[130px] desktop:w-[168px] desktop:h-[168px]" alt="">
-                    <h2 class="pt-[20px] font-['Poppins'] text-[#1D2130] font-normal mobile:text-[20px] desktop:text-[24px] leading-9">Paul Jones</h2>
-                    <h2 class="font-['Poppins'] opacity-70 text-[#1D2130] font-normal mobile:text-[14px] desktop:text-[16px] leading-7">Design Lead</h2>
+                    <h2 class="dark:text-[#e3e3e3] pt-[20px] font-['Poppins'] text-[#1D2130] font-normal mobile:text-[20px] desktop:text-[24px] leading-9">Paul Jones</h2>
+                    <h2 class="dark:text-[#9e9e9e] font-['Poppins'] opacity-70 text-[#1D2130] font-normal mobile:text-[14px] desktop:text-[16px] leading-7">Design Lead</h2>
                 </div>
-                <div class="bg-white mobile:h-[275px] desktop:h-[344px] mobile:w-[240px] desktop:w-[296px] mobile:p-[40px] desktop:p-[60px] flex flex-col items-center">
+                <div class="bg-white mobile:h-[275px] dark:bg-[#202127] dark:rounded-[15px] desktop:h-[344px] mobile:w-[240px] desktop:w-[296px] mobile:p-[40px] desktop:p-[60px] flex flex-col items-center">
                     <img src="./public/images/team/img-4.png" class="rounded-[50%] mobile:w-[130px] mobile:h-[130px] desktop:w-[168px] desktop:h-[168px]" alt="">
-                    <h2 class="pt-[20px] font-['Poppins'] text-[#1D2130] font-normal mobile:text-[20px] desktop:text-[24px] leading-9">Sara Hardin</h2>
-                    <h2 class="font-['Poppins'] opacity-70 text-[#1D2130] font-normal mobile:text-[14px] desktop:text-[16px] leading-7">Project Manager</h2>
+                    <h2 class="dark:text-[#e3e3e3] pt-[20px] font-['Poppins'] text-[#1D2130] font-normal mobile:text-[20px] desktop:text-[24px] leading-9">Sara Hardin</h2>
+                    <h2 class="dark:text-[#9e9e9e] font-['Poppins'] opacity-70 text-[#1D2130] font-normal mobile:text-[14px] desktop:text-[16px] leading-7">Project Manager</h2>
                 </div>
             </div>
         </div>
     </section>
     <!-- #endregion -->
 
+    <!-- #region dark-mode -->
+    <button class="btn cursor-pointer fixed left-5 bottom-5 z-[99]">
+        <img src="./public/images/mode-icon.png" class="w-[50px] h-[50px]" alt="">
+    </button>
+    <!-- #endregion -->
+
     <!-- #region footer-->
     <footer class="w-full mobile:h-auto laptop:h-[390px] desktop:[490px] flex flex-col ">
-        <div class="bg-[#1c1e53] w-full mobile:h-auto laptop:h-[315px] desktop:h-[400px] flex justify-center items-center">
+        <div class="bg-[#1c1e53] dark:bg-[#0f0f0f] w-full mobile:h-auto laptop:h-[315px] desktop:h-[400px] flex justify-center items-center">
             <div class="flex mobile:flex-col laptop:flex-row h-full mobile:w-full laptop:w-[1024px] desktop:w-[80%]">
                 <div class="relative mobile:w-full mobile:h-[50%] laptop:w-[50%] laptop:h-full">
                     <div class="laptop:h-[315px] desktop:h-[318px] mobile:pt-[40px] laptop:pt-0">
                         <div class="w-full h-[60%] flex flex-col justify-end pb-[10px] gap-[20px] mobile:items-center laptop:items-start">
                             <img src="./public/images/icon.svg" class="w-[160px]" alt="">
-                            <p class="mobile:text-center laptop:text-start w-[400px] font-['Poppins'] font-medium text-[16px] leading-7 text-[#FFFFFF]">We are always open to discuss your project and improve your online presence.</p>
+                            <p class="mobile:text-center laptop:text-start w-[400px] font-['Poppins'] font-medium text-[16px] leading-7 text-[#FFFFFF] dark:text-[#9e9e9e]">We are always open to discuss your project and improve your online presence.</p>
                         </div>
                         <div class="w-full h-[40%] flex items-end mobile:justify-center laptop:justify-start">
                             <div class=" bg-[#FCD980] mobile:w-[417px] mobile:h-[75px] desktop:w-[517px] desktop:h-[95px] flex">
@@ -291,7 +309,7 @@
                 <div class="mobile:w-full mobile:h-auto laptop:w-[50%] laptop:h-full flex flex-col justify-center">
                     <div class=" flex flex-col justify-center mobile:items-center laptop:items-start">
                         <h1 class="text-white mobile:mt-[40px] laptop:mt-0 font-['Poppins'] mobile:text-[40px] mobile:font-semibold mobile:leading-[54px] desktop:text-[48px] desktop:font-semibold desktop:leading-[64px]">Lets Talk!</h1>
-                        <p class="mobile:text-center laptop:text-start pt-[10px] w-[400px] font-['Poppins'] font-normal text-[16px] leading-7 text-[#F4F6FC]">We are always open to discuss your project, improve your online presence and help with your UX/UI design challenges.</p>
+                        <p class="mobile:text-center laptop:text-start pt-[10px] w-[400px] font-['Poppins'] font-normal text-[16px] leading-7 text-[#F4F6FC] dark:text-[#9e9e9e]">We are always open to discuss your project, improve your online presence and help with your UX/UI design challenges.</p>
                         <div class="mt-[28px] w-[50%] h-[20px] flex gap-[26px] mobile:justify-center laptop:justify-start">
                             <img src="./public/images/footer/img-4.png" alt="" class="w-[16px] h-[16px] cursor-pointer">
                             <img src="./public/images/footer/img-3.png" alt="" class="w-[16px] h-[16px] cursor-pointer">
@@ -302,24 +320,23 @@
                 </div>
             </div>
         </div>
-        <div class="bg-white w-full mobile:h-100px laptop:h-[75px] desktop:h-[90px] flex justify-center items-center">
+        <div class="bg-white dark:bg-[#dfdfd6] w-full mobile:h-100px laptop:h-[75px] desktop:h-[90px] flex justify-center items-center">
             <div class="flex mobile:flex-col laptop:flex-row laptop:h-full mobile:w-full mobile:h-[100px] laptop:w-[1024px] desktop:w-[80%]">
                 <div class="mobile:w-full mobile:h-[50%] laptop:w-[50%] laptop:h-full flex items-center mobile:justify-center laptop:justify-start">
-                    <a href="#" class="font-['Poppins'] mobile:text-[12px] tablet:text-[16px] text-[#282938] leading-7 font-medium">Copyright 2021, Finsweet.com</a>
+                    <a href="#" class="dark:hover:text-[#646cff] font-['Poppins'] mobile:text-[12px] tablet:text-[16px] text-[#282938] leading-7 font-medium transition-all duration-300 ease-linear">Copyright 2021, Finsweet.com</a>
                 </div>
                 <div class="mobile:w-full mobile:h-[50%] laptop:w-[50%] laptop:h-full flex items-center justify-center gap-[20px]">
-                    <a href="./index.html" class="dark:hover:text-[#de4558] block text-[#282938] mobile:text-[12px] tablet:text-[16px] hover:text-[#1c1e53] transition-all duration-300 ease-linear font-['Poppins']">Home</a>
-                    <a href="./aboutus.html" class="dark:hover:text-[#de4558] block text-[#282938] mobile:text-[12px] tablet:text-[16px] hover:text-[#1c1e53] transition-all duration-300 ease-linear font-['Poppins']">About us</a>
-                    <a href="./features.html" class="dark:hover:text-[#de4558] block text-[#282938] mobile:text-[12px] tablet:text-[16px] hover:text-[#1c1e53] transition-all duration-300 ease-linear font-['Poppins']">Features</a>
-                    <a href="./pricing.html" class="dark:hover:text-[#de4558] block text-[#282938] mobile:text-[12px] tablet:text-[16px] hover:text-[#1c1e53] transition-all duration-300 ease-linear font-['Poppins'] ">Pricing</a>
-                    <a href="#" class="dark:hover:text-[#de4558] block text-[#282938] mobile:text-[12px] tablet:text-[16px] hover:text-[#1c1e53] transition-all duration-300 ease-linear font-['Poppins']">FAQ</a>
-                    <a href="#" class="dark:hover:text-[#de4558] block text-[#282938] mobile:text-[12px] tablet:text-[16px] hover:text-[#1c1e53] transition-all duration-300 ease-linear font-['Poppins'] ">Blog</a>
+                    <a href="./index.html" class="dark:hover:text-[#646cff] block text-[#282938] mobile:text-[12px] tablet:text-[16px] hover:text-[#1c1e53] transition-all duration-300 ease-linear font-['Poppins']">Home</a>
+                    <a href="./aboutus.html" class="dark:hover:text-[#646cff] block text-[#282938] mobile:text-[12px] tablet:text-[16px] hover:text-[#1c1e53] transition-all duration-300 ease-linear font-['Poppins']">About us</a>
+                    <a href="./features.html" class="dark:hover:text-[#646cff] block text-[#282938] mobile:text-[12px] tablet:text-[16px] hover:text-[#1c1e53] transition-all duration-300 ease-linear font-['Poppins']">Features</a>
+                    <a href="./pricing.html" class="dark:hover:text-[#646cff] block text-[#282938] mobile:text-[12px] tablet:text-[16px] hover:text-[#1c1e53] transition-all duration-300 ease-linear font-['Poppins'] ">Pricing</a>
+                    <a href="#" class="dark:hover:text-[#646cff] block text-[#282938] mobile:text-[12px] tablet:text-[16px] hover:text-[#1c1e53] transition-all duration-300 ease-linear font-['Poppins']">FAQ</a>
+                    <a href="#" class="dark:hover:text-[#646cff] block text-[#282938] mobile:text-[12px] tablet:text-[16px] hover:text-[#1c1e53] transition-all duration-300 ease-linear font-['Poppins'] ">Blog</a>
                 </div>
             </div>
         </div>
-    </footer>
-    <!-- #endregion -->
-
+      </footer>
+      <!-- #endregion -->
     </div>
     <!-- #endregion -->
 
@@ -330,10 +347,11 @@
         mobileMenu.classList.toggle('hidden');
     });
 
-        let btn=document.querySelector(".btn")
-        btn.addEventListener("click", function(){
+    let btn=document.querySelector(".btn")
+      btn.addEventListener("click", function(){
         document.body.setAttribute("data-theme", "dark")
-        })
+    })
+
     </script>
 </body>
 </html>
