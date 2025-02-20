@@ -120,7 +120,7 @@
                     </div>
                 </div>
                 <div class="mt-[65px] w-full h-auto flex justify-center">
-                    <a href="#" class="mobile:w-[205px] mobile:h-[50px] rounded-[41px] bg-[#282938] flex justify-center items-center"><span class="font-['Poppins'] text-[#F4F6FC] mobile:text-[16px] desktop:text-[18px] leading-8 font-semibold">Get started</span></a>
+                    <a href="#" class="dark:bg-[#a8b1ff] mobile:w-[205px] mobile:h-[50px] rounded-[41px] bg-[#282938] flex justify-center items-center"><span class="font-['Poppins'] dark:text-[#282938] text-[#F4F6FC] mobile:text-[16px] desktop:text-[18px] leading-8 font-semibold">Get started</span></a>
                 </div>
             </div>
             <div class="bg-[#1C1E53] dark:border-[1px] dark:border-solid dark:border-[#e3e3e3] dark:rounded-[7px] dark:bg-[#161616] mobile:px-[40px] desktop:px-[48px] mobile:py-[55px] desktop:py-[60px] mobile:w-[325px] mobile:h-[590px] desktop:w-[406px] desktop:h-[745px] rounded-[12px] flex flex-col">
@@ -190,7 +190,7 @@
                     </div>
                 </div>
                 <div class="mt-[45px] w-full h-[30%] flex justify-center">
-                    <a href="#" class="mobile:w-[205px] mobile:h-[50px] rounded-[41px] bg-[#282938] flex justify-center items-center"><span class="font-['Poppins'] text-[#F4F6FC] mobile:text-[16px] desktop:text-[18px] leading-8 font-semibold">Get started</span></a>
+                    <a href="#" class="dark:bg-[#a8b1ff] mobile:w-[205px] mobile:h-[50px] rounded-[41px]  bg-[#282938] flex justify-center items-center"><span class="font-['Poppins'] dark:text-[#282938] text-[#F4F6FC] mobile:text-[16px] desktop:text-[18px] leading-8 font-semibold">Get started</span></a>
                 </div>
             </div>        
         </div>
@@ -198,43 +198,81 @@
       <!-- #endregion -->
 
       <!-- #region faq-->
-      <!-- <section class="w-full mobile:h-auto tablet:h-[630px] desktop:h-[880px] flex items-center justify-center">
-        <div class="flex mobile:flex-col tablet:flex-row mobile:w-full mobile:h-auto tablet:w-[715pxpx] tablet:h-[450px] laptop:w-[1025px] desktop:w-[80%] desktop:h-[560px]">
-          <div class="bg-amber-200 mobile:w-full tablet:w-[35%] h-full flex flex-col mobile:items-center tablet:items-start">
-            <h1 class="mobile:text-center tablet:text-start font-['Poppins'] tablet:w-[320px] desktop:w-[406px] font-semibold mobile:text-[38px] desktop:text-[48px] mobile:leading-[54px] desktop:leading-[64px] text-[#282938]">Frequently asked questions</h1>
-            <h1 class="mt-[10px] font-['Poppins'] laptop:w-[320px] desktop:w-[406px] font-normal mobile:text-[15px] desktop:text-[18px] leading-8 text-[#2405F2]">Contact us For More Info</h1>
+      <section class="mobile:py-[60px] mobile:px-[20px] tablet:px-0 w-full mobile:h-auto laptop:h-[500px] desktop:h-[697px] flex justify-center">
+        <div class="h-full laptop:h-[446px] desktop:h-[537px] mobile:w-full tablet:w-[715px] laptop:w-[1025px] desktop:w-[80%] flex mobile:flex-col laptop:flex-row">
+          <div class="mobile:w-full mobile:h-[34%] laptop:w-[34%] laptop:h-full">
+            <h1 class="font-['Poppins'] dark:text-[#dfdfd6] text-[#282938] font-semibold mobile:text-[28px] desktop:text-[38px] mobile:w-[250px] desktop:w-[327px] desktop:leading-14">Frequently asked questions</h1>
+            <a href="./contactus.html" class="dark:text-[#a8b1ff] mobile:mt-[10px] desktop:mt-[15px] font-['Poppins'] text-[#2405F2] font-normal mobile:text-[14px] desktop:text-[16px] mobile:w-[250px] desktop:w-[327px] desktop:leading-16">Contact us for more info</a>
           </div>
-          <div class="mobile:w-full tablet:w-[65%] h-full">
-            <div class="bg-amber-300 collapse collapse-plus border-solid border-b-2 border-[#ECECF1] rounded-none">
-              <input type="radio" name="my-accordion-3" checked="checked">
-              <div class="collapse-title mobile:text-[20px] tablet:text-[24px] mobile:h-[60px] w-auto tablet:h-auto line-clamp-1 overflow-hidden font-[reg] font-[500] leading-[36px] text-[#282938]">
-                <span class="font-[400] leading-[36px] text-[#2405F2] pr-[59px]">01</span>
-                How much time does it take?
+          <div class="mobile:mt-[60px] laptop:mt-0 mobile:w-full mobile:h-[66%] laptop:w-[66%] laptop:h-full">
+            <div class=" border-b-2 border-solid border-b-[#ECECF1]"> 
+              <button class="relative cursor-pointer w-full text-left p-4 focus:outline-none flex items-center" onclick="toggleAccordion(1)">
+                <img src="./public/images/faq/01.svg" class="dark:hidden" alt="">
+                <img src="./public/images/dark-img/img-15.svg" alt="" class="hidden dark:block">
+                <span class="dark:text-[#e3e3e3] font-['Poppins'] mobile:ml-[20px] tablet:ml-[50px] desktop:ml-[65px] font-medium text-[#282938] mobile:text-[14px] tablet:text-[18px] desktop:text-[24px]">How much time does it take?</span>
+                <span id="icon-1" class="dark:text-[#e3e3e3] text-[30px] absolute right-4 top-[5px]">+</span>
+              </button>
+              <div id="content-1" class="p-4">
+                <p class="dark:text-[#9e9e9e] opacity-[87%] mobile:ml-[40px] tablet:ml-[70px] desktop:ml-[80px] font-['Poppins'] font-medium text-[#282938] mobile:text-[12px] desktop:text-[18px] laptop:w-[455px] desktop:w-[624px]">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
               </div>
-              <div class="collapse-content tablet:w-[624px] mobile:w-auto mobile:px-[81.77px] tablet:p-0 tablet:mx-auto font-[reg] font-[500] mobile:text-[14px] tablet:text-[18px] leading-[32px] text-[#282938] opacity-[87%]">
-                <p class="pt-[16px] pb-[48px]">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </div>
+            <div class=" border-b-2 border-solid border-b-[#ECECF1]"> 
+              <button class="relative cursor-pointer w-full text-left p-4 focus:outline-none flex items-center" onclick="toggleAccordion(2)">
+                <img src="./public/images/faq/02.svg" class="dark:hidden" alt="">
+                <img src="./public/images/dark-img/img-16.svg" alt="" class="hidden dark:block">
+                <span class="dark:text-[#e3e3e3] font-['Poppins'] font-medium mobile:ml-[20px] tablet:ml-[50px] desktop:ml-[65px] text-[#282938] mobile:text-[14px] tablet:text-[18px] desktop:text-[24px]">What is your class naming convention?</span>
+                <span id="icon-2" class="dark:text-[#e3e3e3] text-[30px] absolute right-4 top-[5px]">+</span>
+              </button>
+              <div id="content-2" class="hidden p-4">
+                <p class="opacity-[87%] dark:text-[#9e9e9e]  mobile:ml-[40px] tablet:ml-[80px] desktop:ml-[90px] font-['Poppins'] font-medium text-[#282938] mobile:text-[12px] desktop:text-[18px] laptop:w-[455px] desktop:w-[624px]">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+            </div>
+            <div class=" border-b-2 border-solid border-b-[#ECECF1]"> 
+              <button class="relative cursor-pointer w-full text-left p-4 focus:outline-none flex items-center" onclick="toggleAccordion(3)">
+                <img src="./public/images/faq/03.svg" class="dark:hidden" alt="">
+                <img src="./public/images/dark-img/img-17.svg" alt="" class="hidden dark:block">
+                <span class="dark:text-[#e3e3e3] font-['Poppins'] font-medium mobile:ml-[20px] tablet:ml-[50px] desktop:ml-[65px]  text-[#282938] mobile:text-[14px] tablet:text-[18px] desktop:text-[24px]">How do you communicate?</span>
+                <span id="icon-3" class="dark:text-[#e3e3e3] text-[30px] absolute right-4 top-[5px]">+</span>
+              </button>
+              <div id="content-3" class="hidden p-4">
+                <p class="opacity-[87%] dark:text-[#9e9e9e] mobile:ml-[40px] tablet:ml-[80px] desktop:ml-[90px] font-['Poppins'] font-medium text-[#282938] mobile:text-[12px] desktop:text-[18px] laptop:w-[455px] desktop:w-[624px]">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+            </div>
+            <div class=" border-b-2 border-solid border-b-[#ECECF1]"> 
+              <button class="relative cursor-pointer w-full text-left p-4 focus:outline-none flex items-center" onclick="toggleAccordion(4)">
+                <img src="./public/images/faq/04.svg" class="dark:hidden" alt="">
+                <img src="./public/images/dark-img/img-18.svg" alt="" class="hidden dark:block">
+                <span class="dark:text-[#e3e3e3] font-['Poppins'] font-medium mobile:ml-[20px] tablet:ml-[50px] desktop:ml-[65px]  text-[#282938] mobile:text-[14px] tablet:text-[18px] desktop:text-[24px]">I have a bigger project. Can you handle it?</span>
+                <span id="icon-4" class="dark:text-[#e3e3e3] text-[30px] absolute right-4 top-[5px]">+</span>
+              </button>
+              <div id="content-4" class="hidden p-4">
+                <p class="opacity-[87%] dark:text-[#9e9e9e] mobile:ml-[40px] tablet:ml-[80px] desktop:ml-[90px] font-['Poppins'] font-medium text-[#282938] mobile:text-[12px] desktop:text-[18px] laptop:w-[455px] desktop:w-[624px]">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+            </div>
+            <div class=""> 
+              <button class="relative cursor-pointer w-full text-left p-4 focus:outline-none flex items-center" onclick="toggleAccordion(5)">
+                <img src="./public/images/faq/05.svg" class="dark:hidden" alt="">
+                <img src="./public/images/dark-img/img-19.svg" alt="" class="hidden dark:block">
+                <span class="dark:text-[#e3e3e3] font-['Poppins'] font-medium mobile:ml-[20px] tablet:ml-[50px] desktop:ml-[65px]  text-[#282938] mobile:text-[14px] tablet:text-[18px] desktop:text-[24px]">What is your class naming convention?</span>
+                <span id="icon-5" class="dark:text-[#e3e3e3] text-[30px] absolute right-4 top-[5px]">+</span>
+              </button>
+              <div id="content-5" class="hidden p-4">
+                <p class="opacity-[87%] dark:text-[#9e9e9e] mobile:ml-[40px] tablet:ml-[80px] desktop:ml-[90px] font-['Poppins'] font-medium text-[#282938] mobile:text-[12px] desktop:text-[18px] laptop:w-[455px] desktop:w-[624px]">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
               </div>
             </div>
           </div>
         </div>
-      </section> -->
-
-      <div class="collapse collapse-plus border-solid border-b-2 border-[#ECECF1] rounded-none">
-        <input type="radio" name="my-accordion-3" checked="checked">
-        <div class="collapse-title mobile:text-[20px] tablet:text-[24px] mobile:h-[60px] w-auto tablet:h-auto line-clamp-1 overflow-hidden font-[reg] font-[500] leading-[36px] text-[#282938]">
-          <span class="font-[400] leading-[36px] text-[#2405F2] pr-[59px]">01</span>
-          How much time does it take?
-        </div>
-        <div class="collapse-content tablet:w-[624px] mobile:w-auto mobile:px-[81.77px] tablet:p-0 tablet:mx-auto font-[reg] font-[500] mobile:text-[14px] tablet:text-[18px] leading-[32px] text-[#282938] opacity-[87%]">
-          <p class="pt-[16px] pb-[48px]">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-            do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-        </div>
-      </div>
+      </section>
       <!-- #endregion -->
 
       <!-- #region dark-mode -->
@@ -317,7 +355,31 @@
         document.body.setAttribute("data-theme", "dark")
       })
 
+    </script>
+    <script>
+      let openAccordion = 1; 
     
+      function toggleAccordion(itemNumber) {
+        const content = document.getElementById(`content-${itemNumber}`);
+        const icon = document.getElementById(`icon-${itemNumber}`);
+    
+        if (openAccordion && openAccordion !== itemNumber) {
+          const openContent = document.getElementById(`content-${openAccordion}`);
+          const openIcon = document.getElementById(`icon-${openAccordion}`);
+          openContent.classList.add('hidden');
+          openIcon.classList.remove('rotate-45'); 
+        }
+    
+        if (content.classList.contains('hidden')) {
+          content.classList.remove('hidden');
+          icon.classList.add('rotate-45'); 
+          openAccordion = itemNumber; 
+        } else {
+          content.classList.add('hidden');
+          icon.classList.remove('rotate-45');
+          openAccordion = null; 
+        }
+      }
     </script>
   </body>
 </html>

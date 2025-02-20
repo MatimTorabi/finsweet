@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./src/css/main.css">
-  <link rel="stylesheet" href="./src/css/swiper.css">
   <link
   rel="shortcut icon"
   href="./public/images/log.svg"
@@ -12,6 +11,132 @@
   />
   <link rel="stylesheet" href="./swiper/swiper-bundle.min.css" class="">
   <title>Finsweet</title>
+  <style>
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    @media screen and (min-width: 340px){
+      .swiper-button-prev, .swiper-button-disabled {
+        width: 35px;
+        height: 35px;
+        background-color: #5239FA;
+        border-radius: 50%;
+        position: sticky;
+        left: 255px;
+        bottom: 0;
+      }
+    }
+    @media screen and (min-width: 640px){
+      .swiper-button-prev, .swiper-button-disabled {
+        width: 40px;
+        height: 40px;
+        background-color: #5239FA;
+        border-radius: 50%;
+        position: sticky;
+        left: 570px;
+        bottom: 0;
+      }
+    }
+    @media screen and (min-width:1100px){
+      .swiper-button-prev, .swiper-button-disabled {
+        width: 40px;
+        height: 40px;
+        background-color: #5239FA;
+        border-radius: 50%;
+        position: sticky;
+        left: 520px;
+        bottom: 0;
+      }
+    }
+    @media screen and (min-width: 1500px){
+      .swiper-button-prev, .swiper-button-disabled {
+        width: 40px;
+        height: 40px;
+        background-color: #5239FA;
+        border-radius: 50%;
+        position: sticky;
+        left: 700px;
+        bottom: 0;
+      }
+    }
+    
+
+    @media screen and (min-width: 340px){
+      .swiper-button-next, .swiper-rtl .swiper-button-prev{
+        width: 35px;
+        height: 35px;
+        background-color: #5239FA;
+        border-radius: 50%;
+        position: sticky;
+        left: 300px;
+        bottom: 0;
+      }
+    }
+
+    @media screen and (min-width: 640px){
+      .swiper-button-next, .swiper-rtl .swiper-button-prev{
+        width: 40px;
+        height: 40px;
+        background-color: #5239FA;
+        border-radius: 50%;
+        position: sticky;
+        left: 620px;
+        bottom: 0;
+      }
+    }
+    @media screen and (min-width: 1100px){
+      .swiper-button-next, .swiper-rtl .swiper-button-prev{
+        width: 40px;
+        height: 40px;
+        background-color: #5239FA;
+        border-radius: 50%;
+        position: sticky;
+        left: 570px;
+        bottom: 0;
+      }
+    }
+    @media screen and (min-width: 1500px){
+      .swiper-button-next, .swiper-rtl .swiper-button-prev{
+        width: 40px;
+        height: 40px;
+        background-color: #5239FA;
+        border-radius: 50%;
+        position: sticky;
+        left: 750px;
+        bottom: 0;
+      }
+    }
+
+    .swiper-button-next:after, .swiper-button-prev:after{
+      font-size: 16px;
+      color: #e3e3e3;
+      font-weight: bold;
+    }
+
+    .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after{
+      font-size: 16px;
+      color: #e3e3e3;
+      font-weight: bold;
+    }
+
+  </style>
 </head>
 <body data-theme="light" class="dark:bg-[#1b1b1f]">
   
@@ -76,15 +201,17 @@
     <section class="dark:bg-[#0f0f0f] w-full mobile:h-[900px] bg-[#1C1E53] laptop:h-[550px] desktop:h-[760px] flex justify-center">
       <div class="mobile:w-full laptop:w-[1025px] desktop:w-[80%] h-full flex mobile:flex-col-reverse laptop:flex-row justify-center mobile:items-center desktop:items-start">
         <div class="mobile:w-[90%] tablet:w-[50%] laptop:w-[50%] h-full flex flex-col justify-center">
-            <h2 class="dark:text-[#dfdfd6] font-[Poppins] font-semibold tablet:text-[57px] mobile:text-[40px] leading-[74px] text-[#fff] mb-[24px] line-clamp-3 desktop:w-[540px]">
+            <h2 class="dark:text-[#dfdfd6] font-[Poppins] font-semibold tablet:text-[57px] mobile:text-[40px] leading-[74px] text-white mb-[24px] line-clamp-3 desktop:w-[540px]">
               Building stellar websites for early startups
             </h2>
             <h2 class="font-[Poppins] dark:text-[#9e9e9e] font-normal text-[16px] leading-7 text-[#FFFFFF] laptop:w-[480px]">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
             </h2>
-            <div class="desktop:pt-[20px] w-full mobile:h-[45px] gap-[30px] desktop:h-[56px] flex mt-[40px]">
-              <button class="desktop:w-[230px] mobile:w-[185px] mobile:h-[54px] desktop:h-[64px] rounded-[41px] bg-[#FCD980] text-[#1B1C2B]  mobile:text-[12px] leading-8 font-semibold font-[Poppins] desktop:text-[16px] cursor-pointer">View our work</button>
-              <a href="#" class="flex items-center gap-[15px]">
+            <div class="desktop:pt-[20px] w-full mobile:h-[45px] gap-[30px] desktop:h-[56px] flex mt-[40px] items-center">
+              <a href="">
+                <button class="desktop:w-[230px] mobile:w-[185px] mobile:h-[54px] desktop:h-[64px] rounded-[41px] bg-[#FCD980] text-[#1B1C2B]  mobile:text-[12px] leading-8 font-semibold font-[Poppins] desktop:text-[16px] cursor-pointer">View our work</button>
+              </a>
+              <a href="./pricing.html" class="flex items-center gap-[15px]">
                 <span class="font-[Poppins] text-white mobile:text-[12px] desktop:text-[16px]">View Pricing</span>
                 <img class="mobile:w-[20px] desktop:w-[24px]" src="./public/images/arrow.svg" alt="">
               </a>
@@ -140,7 +267,7 @@
       <div class="w-full h-auto laptop:w-[1025px] laptop:h-[575px] desktop:w-[80%] desktop:h-[728px]">
         <div class="gap-[10px] w-full laptop:mt-0 px-[20px] mt-[60px] flex flex-row flex-wrap justify-between items-center">
           <h2 class="dark:text-[#e3e3e3] font-['Poppins'] font-semibold text-[48px] leading-[64px] text-[#282938]">View our projects</h2>
-          <a href="#" class="font-['Poppins'] flex items-center gap-4 font-normal text-[16px] leading-7 text-[#282938]">
+          <a href="#" class="font-['Poppins'] dark:text-[#e3e3e3] flex items-center gap-4 font-normal text-[16px] leading-7 text-[#282938]">
             View More
             <img src="./public/images/arrow-1.svg" class="w-[24px] " alt="">
           </a>
@@ -279,51 +406,124 @@
     <!-- #endregion -->
      
     <!-- #region test-->
-     <!-- <section class="bg-[#F9FAFD] mobile:px-[20px] tablet:px-0 w-full mobile:h-auto laptop:h-[406px] desktop:h-[506px] flex justify-center">
-        <div class="bg-amber-100 h-full mobile:w-full tablet:w-[715px] laptop:w-[1025px] desktop:w-[80%] flex mobile:flex-col laptop:flex-row">
-          <div class="bg-amber-600 mobile:w-full mobile:h-[34%] laptop:w-[34%] laptop:h-full">
-            <h1 class="font-['Poppins'] text-[#282938] font-semibold mobile:text-[28px] desktop:text-[38px] mobile:w-[250px] desktop:w-[327px] desktop:leading-14">What our clients say about us</h1>
-            <p class="mobile:mt-[10px] desktop:mt-[15px] font-['Poppins'] text-[#282938] opacity-70 font-normal mobile:text-[14px] desktop:text-[16px] mobile:w-[250px] desktop:w-[327px] desktop:leading-7">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed.</p>
+     <!-- <section class="bg-[#F9FAFD] mobile:px-[20px] tablet:px-0 w-full mobile:h-auto laptop:h-[406px] desktop:h-[506px] flex justify-center items-center">
+        <div class="bg-amber-100 mobile:h-auto laptop:h-[250px] desktop:h-[300px] mobile:w-full tablet:w-[715px] tablet:h-auto laptop:w-[1025px] desktop:w-[80%] mobile:gap-[30px] laptop:gap-0 flex mobile:flex-col laptop:flex-row">
+          <div class="bg-amber-600 mobile:w-full mobile:h-[150px] laptop:w-[34%] laptop:h-full flex flex-col justify-center">
+            <h1 class="font-['Poppins'] text-[#282938] font-semibold mobile:text-[18px] desktop:text-[38px] mobile:w-[250px] desktop:w-[327px] desktop:leading-14">What our clients say about us</h1>
+            <p class="mobile:mt-[10px] desktop:mt-[15px] font-['Poppins'] text-[#282938] opacity-70 font-normal mobile:text-[12px] desktop:text-[16px] mobile:w-[250px] desktop:w-[327px] desktop:leading-7">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed.</p>
           </div>
-          <div class="bg-amber-950 mobile:w-full mobile:h-[66%] laptop:w-[66%] laptop:h-full flex items-center">
-
+          <div class="bg-amber-950 relative mobile:w-full mobile:h-[250px] laptop:w-[66%] laptop:h-full flex items-center">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="flex flex-col items-start w-full h-full">
+                    <p class="w-full h-[144px] line-clamp-3 font-['Poppins'] font-medium tablet:text-[32px] mobile:text-[26px] leading-[48px] text-[#282938]">
+                      "The best agency we’ve worked with so far. They understand
+                      our product and are able to add new features with a great
+                      focus."
+                    </p>
+                    <div class="flex justify-start items-center gap-x-[14px] h-[54px]">
+                      <img src="public/images/sec-4/Mask Group.png" alt="">
+                      <div>
+                        <span class="block font-[reg] font-[400] text-[18px] leading-[32px] text-[#282938]">Jenny Wilson</span>
+                        <span class="block font-[reg] font-[400] text-[12px] leading-[28px] text-[#282938]">Vice President</span>
+                      </div>
+                    </div>
+                    <div class="mobile:w-[149px] mobile:h-[46px] laptop:w-[249px] laptop:h-[56px]"></div>
+                  </div>
+                </div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+                <div class="swiper-slide">Slide 4</div>
+                <div class="swiper-slide">Slide 5</div>
+                <div class="swiper-slide">Slide 6</div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
           </div>
         </div>
+        
      </section> -->
     <!-- #endregion -->
-    <!-- Swiper -->
-    <!-- <div class="swiper mySwiper mobile:h-[205px] desktop:h-[250px]">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <div class="w-full h-full flex flex-col justify-between">
-          <div class="bg-blue-300 w-full mobile:h-[120px] desktop:h-[144px]">
-            <p class="font-['Poppins'] text-[#282938] mobile:text-[22px] desktop:text-[32px] font-medium mobile:leading-8 desktop:leading-12">
-              "The best agency we’ve worked with so far. They understand our product and are able to add new features with a great focus."
-            </p>
-          </div>
-          <div class="bg-amber-300 w-full h-[64px]">
-            
-          </div>
-        </div>
-      </div>
-      <div class="swiper-slide">Slide 2</div>
-      <div class="swiper-slide">Slide 3</div>
-    </div>
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-    </div> -->
 
-    <!-- #region test-->
-    <!-- <section class="bg-[#F9FAFD] mobile:px-[20px] tablet:px-0 w-full mobile:h-auto laptop:h-[406px] desktop:h-[506px] flex justify-center">
-      <div class="bg-amber-100 h-full mobile:w-full tablet:w-[715px] laptop:w-[1025px] desktop:w-[80%] flex mobile:flex-col laptop:flex-row">
-        <div class="bg-amber-600 mobile:w-full mobile:h-[34%] laptop:w-[34%] laptop:h-full">
-          <h1 class="font-['Poppins'] text-[#282938] font-semibold mobile:text-[28px] desktop:text-[38px] mobile:w-[250px] desktop:w-[327px] desktop:leading-14">Frequently asked questions</h1>
-          <p class="mobile:mt-[10px] desktop:mt-[15px] font-['Poppins'] text-[#2405F2] font-normal mobile:text-[14px] desktop:text-[16px] mobile:w-[250px] desktop:w-[327px] desktop:leading-7">Contact us for more info</p>
+    <!-- #region faq-->
+    <section class="mobile:py-[60px] mobile:px-[20px] tablet:px-0 w-full mobile:h-auto laptop:h-[446px] desktop:h-[537px] flex justify-center">
+      <div class="h-full mobile:w-full tablet:w-[715px] laptop:w-[1025px] desktop:w-[80%] flex mobile:flex-col laptop:flex-row">
+        <div class="mobile:w-full mobile:h-[34%] laptop:w-[34%] laptop:h-full">
+          <h1 class="font-['Poppins'] dark:text-[#dfdfd6] text-[#282938] font-semibold mobile:text-[28px] desktop:text-[38px] mobile:w-[250px] desktop:w-[327px] desktop:leading-14">Frequently asked questions</h1>
+          <a href="./contactus.html" class="dark:text-[#a8b1ff] mobile:mt-[10px] desktop:mt-[15px] font-['Poppins'] text-[#2405F2] font-normal mobile:text-[14px] desktop:text-[16px] mobile:w-[250px] desktop:w-[327px] desktop:leading-16">Contact us for more info</a>
         </div>
-        <div class="bg-amber-950 mobile:w-full mobile:h-[66%] laptop:w-[66%] laptop:h-full"></div>
+        <div class="mobile:mt-[60px] laptop:mt-0 mobile:w-full mobile:h-[66%] laptop:w-[66%] laptop:h-full">
+          <div class=" border-b-2 border-solid border-b-[#ECECF1]"> 
+            <button class="relative cursor-pointer w-full text-left p-4 focus:outline-none flex items-center" onclick="toggleAccordion(1)">
+              <img src="./public/images/faq/01.svg" class="dark:hidden" alt="">
+              <img src="./public/images/dark-img/img-15.svg" alt="" class="hidden dark:block">
+              <span class="dark:text-[#e3e3e3] font-['Poppins'] mobile:ml-[20px] tablet:ml-[50px] desktop:ml-[65px] font-medium text-[#282938] mobile:text-[14px] tablet:text-[18px] desktop:text-[24px]">How much time does it take?</span>
+              <span id="icon-1" class="dark:text-[#e3e3e3] text-[30px] absolute right-4 top-[5px]">+</span>
+            </button>
+            <div id="content-1" class="p-4">
+              <p class="dark:text-[#9e9e9e] opacity-[87%] mobile:ml-[40px] tablet:ml-[70px] desktop:ml-[80px] font-['Poppins'] font-medium text-[#282938] mobile:text-[12px] desktop:text-[18px] laptop:w-[455px] desktop:w-[624px]">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </div>
+          <div class=" border-b-2 border-solid border-b-[#ECECF1]"> 
+            <button class="relative cursor-pointer w-full text-left p-4 focus:outline-none flex items-center" onclick="toggleAccordion(2)">
+              <img src="./public/images/faq/02.svg" class="dark:hidden" alt="">
+              <img src="./public/images/dark-img/img-16.svg" alt="" class="hidden dark:block">
+              <span class="dark:text-[#e3e3e3] font-['Poppins'] font-medium mobile:ml-[20px] tablet:ml-[50px] desktop:ml-[65px] text-[#282938] mobile:text-[14px] tablet:text-[18px] desktop:text-[24px]">What is your class naming convention?</span>
+              <span id="icon-2" class="dark:text-[#e3e3e3] text-[30px] absolute right-4 top-[5px]">+</span>
+            </button>
+            <div id="content-2" class="hidden p-4">
+              <p class="opacity-[87%] dark:text-[#9e9e9e]  mobile:ml-[40px] tablet:ml-[80px] desktop:ml-[90px] font-['Poppins'] font-medium text-[#282938] mobile:text-[12px] desktop:text-[18px] laptop:w-[455px] desktop:w-[624px]">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </div>
+          <div class=" border-b-2 border-solid border-b-[#ECECF1]"> 
+            <button class="relative cursor-pointer w-full text-left p-4 focus:outline-none flex items-center" onclick="toggleAccordion(3)">
+              <img src="./public/images/faq/03.svg" class="dark:hidden" alt="">
+              <img src="./public/images/dark-img/img-17.svg" alt="" class="hidden dark:block">
+              <span class="dark:text-[#e3e3e3] font-['Poppins'] font-medium mobile:ml-[20px] tablet:ml-[50px] desktop:ml-[65px]  text-[#282938] mobile:text-[14px] tablet:text-[18px] desktop:text-[24px]">How do you communicate?</span>
+              <span id="icon-3" class="dark:text-[#e3e3e3] text-[30px] absolute right-4 top-[5px]">+</span>
+            </button>
+            <div id="content-3" class="hidden p-4">
+              <p class="opacity-[87%] dark:text-[#9e9e9e] mobile:ml-[40px] tablet:ml-[80px] desktop:ml-[90px] font-['Poppins'] font-medium text-[#282938] mobile:text-[12px] desktop:text-[18px] laptop:w-[455px] desktop:w-[624px]">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </div>
+          <div class=" border-b-2 border-solid border-b-[#ECECF1]"> 
+            <button class="relative cursor-pointer w-full text-left p-4 focus:outline-none flex items-center" onclick="toggleAccordion(4)">
+              <img src="./public/images/faq/04.svg" class="dark:hidden" alt="">
+              <img src="./public/images/dark-img/img-18.svg" alt="" class="hidden dark:block">
+              <span class="dark:text-[#e3e3e3] font-['Poppins'] font-medium mobile:ml-[20px] tablet:ml-[50px] desktop:ml-[65px]  text-[#282938] mobile:text-[14px] tablet:text-[18px] desktop:text-[24px]">I have a bigger project. Can you handle it?</span>
+              <span id="icon-4" class="dark:text-[#e3e3e3] text-[30px] absolute right-4 top-[5px]">+</span>
+            </button>
+            <div id="content-4" class="hidden p-4">
+              <p class="opacity-[87%] dark:text-[#9e9e9e] mobile:ml-[40px] tablet:ml-[80px] desktop:ml-[90px] font-['Poppins'] font-medium text-[#282938] mobile:text-[12px] desktop:text-[18px] laptop:w-[455px] desktop:w-[624px]">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </div>
+          <div class=""> 
+            <button class="relative cursor-pointer w-full text-left p-4 focus:outline-none flex items-center" onclick="toggleAccordion(5)">
+              <img src="./public/images/faq/05.svg" class="dark:hidden" alt="">
+              <img src="./public/images/dark-img/img-19.svg" alt="" class="hidden dark:block">
+              <span class="dark:text-[#e3e3e3] font-['Poppins'] font-medium mobile:ml-[20px] tablet:ml-[50px] desktop:ml-[65px]  text-[#282938] mobile:text-[14px] tablet:text-[18px] desktop:text-[24px]">What is your class naming convention?</span>
+              <span id="icon-5" class="dark:text-[#e3e3e3] text-[30px] absolute right-4 top-[5px]">+</span>
+            </button>
+            <div id="content-5" class="hidden p-4">
+              <p class="opacity-[87%] dark:text-[#9e9e9e] mobile:ml-[40px] tablet:ml-[80px] desktop:ml-[90px] font-['Poppins'] font-medium text-[#282938] mobile:text-[12px] desktop:text-[18px] laptop:w-[455px] desktop:w-[624px]">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
-    </section> -->
-    <!-- #endregion -->    
+    </section>
+    <!-- #endregion -->
 
     <!-- #region contact form-->
      <section class="mobile:px-[20px] tablet:px-0 w-full mobile:h-auto laptop:h-[730px] desktop:h-[867px] flex items-center justify-center">
@@ -483,34 +683,54 @@
     </footer>
     <!-- #endregion -->
 
-
-
-
   </div>
   <!-- #endregion -->
   <script src="./swiper/swiper-bundle.min.js"></script>
   <script>
-    // Toggle mobile menu
-    document.getElementById('menu-toggle').addEventListener('click', function() {
-        var mobileMenu = document.getElementById('mobile-menu');
-        mobileMenu.classList.toggle('hidden');
-    });
+      // Toggle mobile menu
+      document
+        .getElementById("menu-toggle")
+        .addEventListener("click", function () {
+          var mobileMenu = document.getElementById("mobile-menu");
+          mobileMenu.classList.toggle("hidden");
+        });
 
-    let btn=document.querySelector(".btn")
+      let btn=document.querySelector(".btn")
       btn.addEventListener("click", function(){
         document.body.setAttribute("data-theme", "dark")
-    })
-
-    var swiper = new Swiper(".mySwiper", {
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      })
+      var swiper = new Swiper(".mySwiper", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
       },
     });
-
-
   </script>
+  <script>
+  let openAccordion = 1; 
 
+  function toggleAccordion(itemNumber) {
+    const content = document.getElementById(`content-${itemNumber}`);
+    const icon = document.getElementById(`icon-${itemNumber}`);
+
+    if (openAccordion && openAccordion !== itemNumber) {
+      const openContent = document.getElementById(`content-${openAccordion}`);
+      const openIcon = document.getElementById(`icon-${openAccordion}`);
+      openContent.classList.add('hidden');
+      openIcon.classList.remove('rotate-45'); 
+    }
+
+    if (content.classList.contains('hidden')) {
+      content.classList.remove('hidden');
+      icon.classList.add('rotate-45'); 
+      openAccordion = itemNumber; 
+    } else {
+      content.classList.add('hidden');
+      icon.classList.remove('rotate-45');
+      openAccordion = null; 
+    }
+  }
+  </script>
 </body>
 </html>
 
