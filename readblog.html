@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Read Blog</title>
+    <link rel="stylesheet" href="./src/css/main.css" />
+    <link
+    rel="shortcut icon"
+    href="./public/images/log.svg"
+    type="image/x-icon"
+    />
+</head>
+<body data-theme="light" class="dark:bg-[#1b1b1f]">
+
+    <!-- #region project-->
+    <div class="wrapper">
+        <!-- #region header-->
+        <header class="sticky top-0 left-0 z-[100000] dark:bg-[#0f0f0f] bg-[#1C1E53] w-full mobile:h-[66px] desktop:h-[92px] flex items-center justify-center">
+            <div class="flex mobile:w-full mobile:h-full mobile:mx-[20px] tablet:w-[715px] tablet:h-full tablet:mx-[100px] laptop:w-[1025px] laptop:h-full laptop:mx-[130px] desktop:w-[80%] desktop:h-full desktop:mx-[160px]">
+                <div class="h-full mobile:w-[50%] tablet:w-[20%] flex items-center mobile:justify-center tablet:justify-start">
+                    <img src="./public/images/icon.svg" class="w-[122px]" alt="">
+                </div>
+                <div class="h-full mobile:w-[50%] tablet:w-[80%] flex items-center justify-end tablet:gap-[10px] laptop:gap-[30px]">
+                    <div class="w-fit h-[30px] mobile:hidden tablet:block">
+                        <a href="./index.html" class="hover:text-white dark:hover:text-[#646cff] transition-all duration-300 ease-linear font-[Poppins] font-medium mobile:text-[12px] laptop:text-[16px] leading-7 text-[#BBBBCB]">Home</a>
+                    </div>
+                    <div class="w-fit h-[30px] mobile:hidden tablet:block">
+                        <a href="./aboutus.html" class="hover:text-white dark:hover:text-[#646cff] transition-all duration-300 ease-linear font-[Poppins] font-medium mobile:text-[12px] laptop:text-[16px] leading-7 text-[#BBBBCB]">About us</a>
+                    </div>
+                    <div class="w-fit h-[30px] mobile:hidden tablet:block">
+                        <a href="./features.html" class="hover:text-white dark:hover:text-[#646cff] transition-all duration-300 ease-linear font-[Poppins] font-medium mobile:text-[12px] laptop:text-[16px] leading-7 text-[#BBBBCB]">Features</a>
+                    </div>
+                    <div class="w-fit h-[30px] mobile:hidden tablet:block">
+                        <a href="./pricing.html" class="hover:text-white dark:hover:text-[#646cff] transition-all duration-300 ease-linear font-[Poppins] font-medium mobile:text-[12px] laptop:text-[16px] leading-7 text-[#BBBBCB]">Pricing</a>
+                    </div>
+                    <div class="w-fit h-[30px] mobile:hidden tablet:block">
+                        <a href="#" class="hover:text-white dark:hover:text-[#646cff] transition-all duration-300 ease-linear font-[Poppins] font-medium mobile:text-[12px] laptop:text-[16px] leading-7 text-[#BBBBCB]">FAQ</a>
+                    </div>
+                    <div class="w-fit h-[30px] mobile:hidden tablet:block">
+                        <a href="./blog.html" class="hover:text-white dark:hover:text-[#646cff] transition-all duration-300 ease-linear font-[Poppins] font-medium mobile:text-[12px] laptop:text-[16px] leading-7 text-[#BBBBCB]">Blog</a>
+                    </div>
+                    <a href="./contactus.html">
+                        <button class="font-[Poppins] font-medium mobile:text-[12px] laptop:text-[16px] leading-7 text-[#e3e3e3] hover:text-[#2b2b2b] cursor-pointer mobile:w-[80px] tablet:w-[100px] laptop:w-[145px] laptop:h-[45px] desktop:w-[185px] desktop:h-[60px] rounded-[41px] border-solid border-[#F4F6FC33] border-[2px] hover:bg-white hover:border-[#2b2b2b] transition-all duration-300 ease-linear ">
+                            Contact us
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <div class="flex tablet:hidden absolute top-[23px] left-[20px]">
+                <button id="menu-toggle" class="desktop:hidden mobile:w-[100%] mobile:h-[20px] mobile:flex mobile:items-center pr-[5px] focus:outline-none">
+                    <div class="mobile:w-[25px] mobile:h-[25px] mobile:flex mobile:justify-center mobile:items-center mobile:flex-col mobile:gap-[4px] mobile:cursor-pointer">
+                    <div class="mobile:w-[25px] mobile:h-[3px] mobile:bg-white rounded-[5px]"></div>
+                    <div class="mobile:w-[25px] mobile:h-[3px] mobile:bg-white rounded-[5px]"></div>
+                    <div class="mobile:w-[25px] mobile:h-[3px] mobile:bg-white rounded-[5px]"></div>
+                    </div>
+                </button>
+            </div>
+            <div id="mobile-menu" class="hidden bg-[#1C1E53] dark:bg-[#0f0f0f] mobile:w-full tablet:hidden desktop:hidden absolute top-[65px]">
+                <div class="box-border flex flex-col gap-2 pl-[20px]">
+                    <a href="./index.html" class="dark:hover:text-[#646cff] block text-[#BBBBCB] text-[12px] hover:text-white transition-all duration-300 ease-linear font-['Poppins']">Home</a>
+                    <a href="./aboutus.html" class="dark:hover:text-[#646cff] block text-[#BBBBCB] text-[12px] hover:text-white transition-all duration-300 ease-linear font-['Poppins']">About us</a>
+                    <a href="./features.html" class="dark:hover:text-[#646cff] block text-[#BBBBCB] text-[12px] hover:text-white transition-all duration-300 ease-linear font-['Poppins']">Features</a>
+                    <a href="./pricing.html" class="dark:hover:text-[#646cff] block text-[#BBBBCB] text-[12px] hover:text-white transition-all duration-300 ease-linear font-['Poppins'] ">Pricing</a>
+                    <a href="#" class="dark:hover:text-[#646cff] block text-[#BBBBCB] text-[12px] hover:text-white transition-all duration-300 ease-linear font-['Poppins']">FAQ</a>
+                    <a href="./blog.html" class="dark:hover:text-[#646cff] block text-[#BBBBCB] text-[12px] hover:text-white transition-all duration-300 ease-linear font-['Poppins'] ">Blog</a>
+                </div>
+            </div>
+            </header>
+        <!-- #endregion -->
+        
+        <!-- #region featured blog-->
+        <section class="mobile:mt-[60px] tablet:mt-0 mobile:px-[20px] tablet:px-0 w-full mobile:h-auto tablet:h-[725px] desktop:h-[1000px] flex items-center justify-center">
+            <div class="mobile:w-full mobile:h-auto tablet:w-[715px] tablet:h-[555px] laptop:w-[1025px] desktop:w-[80%] desktop:h-[670px] flex flex-col items-center gap-[20px]">
+                <h2 class="font-['Poppins'] laptop:w-[680px] desktop:w-[950px] mobile:text-[24px] tablet:text-[38px] desktop:text-[48px] font-semibold text-center text-[#282938] dark:text-[#e3e3e3]">A UX Case Study on Creating a Studious Environment for Students</h2>
+                <div class="flex gap-2">
+                    <span class="font-['Poppins'] mobile:text-[14px] desktop:text-[16px] font-medium opacity-70 text-[#282938] dark:text-[#9e9e9e]">Andrew Jonson</span>
+                    <span class="font-['Poppins'] mobile:text-[14px] desktop:text-[16px] font-medium text-[#282938] dark:text-[#e3e3e3]">Posted on 27th January 2021</span>
+                </div>
+                <img src="./public/images/blog/img-1.png" alt="" class="object-cover w-full mobile:h-[220px] tablet:h-[380px] desktop:h-[477px]">
+            </div>
+        </section>
+        <!-- #endregion -->
+
+        <!-- #region text-->
+        <section class="mobile:px-[20px] py-[60px] tablet:px-0 w-full h-auto flex justify-center items-center">
+            <div class="h-auto mobile:w-full tablet:w-[675px] desktop:w-[840px] flex flex-col gap-[40px]">
+                <h1 class="dark:text-[#e3e3e3] font-['Poppins'] text-[#282938] mobile:text-[18px] tablet:text-[28px] font-semibold desktop:text-[38px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
+                <p class="mobile:leading-6 desktop:leading-7 font-['Poppins'] opacity-70 mobile:text-[14px] desktop:text-[16px] font-normal dark:text-[#9e9e9e] text-[#282938]">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                    commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                    velit esse cillum dolore eu fugiat nulla pariatur.<span class="text-[#2405F2] opacity-70 dark:text-[#a8b1ff]">Excepteur sint occaecat</span>
+                    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                    est laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                    qui officia deserunt mollit anim id est laborum.
+                </p>
+                <h1 class="dark:text-[#e3e3e3] font-['Poppins'] text-[#282938] mobile:text-[18px] tablet:text-[28px] font-semibold desktop:text-[38px]">Ut enim ad minim veniam, quis nostrud.</h1>
+                <p class="mobile:leading-6 desktop:leading-7 font-['Poppins'] opacity-70 mobile:text-[14px] desktop:text-[16px] font-normal dark:text-[#9e9e9e] text-[#282938]">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                    commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                    <span class="text-[#2405F2] opacity-70 dark:text-[#a8b1ff]">cupidatat non</span>
+                      proident, sunt in culpa qui officia deserunt mollit anim id
+                    est laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                    qui officia deserunt mollit anim id est laborum.
+                </p>
+                <ol class="list-disc pl-[20px] flex flex-col gap-[10px]">
+                    <li class="font-['Poppins'] opacity-70 mobile:text-[14px] desktop:text-[16px] font-normal dark:text-[#9e9e9e] text-[#282938]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</li>
+                    <li class="font-['Poppins'] opacity-70 mobile:text-[14px] desktop:text-[16px] font-normal dark:text-[#9e9e9e] text-[#282938]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</li>
+                    <li class="font-['Poppins'] opacity-70 mobile:text-[14px] desktop:text-[16px] font-normal dark:text-[#9e9e9e] text-[#282938]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</li>
+                </ol>
+
+                <p class="mobile:leading-6 desktop:leading-7 font-['Poppins'] opacity-70 mobile:text-[14px] desktop:text-[16px] font-normal dark:text-[#9e9e9e] text-[#282938]">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                    veniam, quis nostrud <span class="text-[#2405F2] opacity-70 dark:text-[#a8b1ff]">exercitation ullamco</span> laboris nisi ut aliquip ex ea
+                    commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                    est laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                    qui officia deserunt mollit anim id est laborum.
+                </p>
+                <img src="./public/images/blog/img-8.png" alt="" class="object-cover w-full mobile:h-[180px] tablet:h-[250px] desktop:h-[311px]">
+                <h1 class="dark:text-[#e3e3e3] font-['Poppins'] text-[#282938] mobile:text-[18px] tablet:text-[28px] font-semibold desktop:text-[38px]">Ut enim ad minim veniam, quis nostrud.</h1>
+                <p class="mobile:leading-6 desktop:leading-7 font-['Poppins'] opacity-70 mobile:text-[14px] desktop:text-[16px] font-normal dark:text-[#9e9e9e] text-[#282938]">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                    veniam, quis nostrud <span class="text-[#2405F2] opacity-70 dark:text-[#a8b1ff]">exercitation ullamco</span> laboris nisi ut aliquip ex ea
+                    commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                    est laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                    qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+        </section>
+        <!-- #endregion -->
+
+        <!-- #region dark-mode -->
+        <button class="btn cursor-pointer fixed left-5 bottom-5 z-[99]">
+        <img src="./public/images/mode-icon.png" class="w-[50px] h-[50px]" alt="">
+        </button>
+        <!-- #endregion -->
+
+        <!-- #region footer-->
+        <footer class="w-full mobile:h-auto laptop:h-[390px] desktop:[490px] flex flex-col ">
+        <div class="bg-[#1c1e53] dark:bg-[#0f0f0f] w-full mobile:h-auto laptop:h-[315px] desktop:h-[400px] flex justify-center items-center">
+            <div class="flex mobile:flex-col laptop:flex-row h-full mobile:w-full laptop:w-[1024px] desktop:w-[80%]">
+                <div class="relative mobile:w-full mobile:h-[50%] laptop:w-[50%] laptop:h-full">
+                    <div class="laptop:h-[315px] desktop:h-[318px] mobile:pt-[40px] laptop:pt-0">
+                        <div class="w-full h-[60%] flex flex-col justify-end pb-[10px] gap-[20px] mobile:items-center laptop:items-start">
+                            <img src="./public/images/icon.svg" class="w-[160px]" alt="">
+                            <p class="mobile:text-center laptop:text-start w-[400px] font-['Poppins'] font-medium text-[16px] leading-7 text-[#FFFFFF] dark:text-[#9e9e9e]">We are always open to discuss your project and improve your online presence.</p>
+                        </div>
+                        <div class="w-full h-[40%] flex items-end mobile:justify-center laptop:justify-start">
+                            <div class=" bg-[#FCD980] mobile:w-[417px] mobile:h-[75px] desktop:w-[517px] desktop:h-[95px] flex">
+                                <div class="w-[50%] h-full flex flex-col justify-center">
+                                    <h2 class="pl-[20px] font-['Poppins'] mobile:text-[12px] laptop:text-[16px] font-normal leading-7 text-[#282938]">Email me at</h2>
+                                    <h2 class="pl-[20px] font-['Poppins'] mobile:text-[12px] laptop:text-[16px] font-normal leading-7 text-[#282938] opacity-70">contact@website.com</h2>
+                                </div>
+                                <div class="w-[50%] h-full flex flex-col justify-center">
+                                    <h2 class="pl-[20px] font-['Poppins'] mobile:text-[12px] laptop:text-[16px] font-normal leading-7 text-[#282938]">Call us</h2>
+                                    <h2 class="pl-[20px] font-['Poppins'] mobile:text-[12px] laptop:text-[16px] font-normal leading-7 text-[#282938] opacity-70">0927 6277 28525</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mobile:w-full mobile:h-auto laptop:w-[50%] laptop:h-full flex flex-col justify-center">
+                    <div class=" flex flex-col justify-center mobile:items-center laptop:items-start">
+                        <h1 class="text-white mobile:mt-[40px] laptop:mt-0 font-['Poppins'] mobile:text-[40px] mobile:font-semibold mobile:leading-[54px] desktop:text-[48px] desktop:font-semibold desktop:leading-[64px]">Lets Talk!</h1>
+                        <p class="mobile:text-center laptop:text-start pt-[10px] w-[400px] font-['Poppins'] font-normal text-[16px] leading-7 text-[#F4F6FC] dark:text-[#9e9e9e]">We are always open to discuss your project, improve your online presence and help with your UX/UI design challenges.</p>
+                        <div class="mt-[28px] w-[50%] h-[20px] flex gap-[26px] mobile:justify-center laptop:justify-start">
+                            <img src="./public/images/footer/img-4.png" alt="" class="w-[16px] h-[16px] cursor-pointer">
+                            <img src="./public/images/footer/img-3.png" alt="" class="w-[16px] h-[16px] cursor-pointer">
+                            <img src="./public/images/footer/img-2.png" alt="" class="w-[16px] h-[16px] cursor-pointer">
+                            <img src="./public/images/footer/img-1.png" alt="" class="w-[16px] h-[16px] cursor-pointer">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-white dark:bg-[#dfdfd6] w-full mobile:h-100px laptop:h-[75px] desktop:h-[90px] flex justify-center items-center">
+            <div class="flex mobile:flex-col laptop:flex-row laptop:h-full mobile:w-full mobile:h-[100px] laptop:w-[1024px] desktop:w-[80%]">
+                <div class="mobile:w-full mobile:h-[50%] laptop:w-[50%] laptop:h-full flex items-center mobile:justify-center laptop:justify-start">
+                    <a href="#" class="dark:hover:text-[#646cff] font-['Poppins'] mobile:text-[12px] tablet:text-[16px] text-[#282938] leading-7 font-medium transition-all duration-300 ease-linear">Copyright 2021, Finsweet.com</a>
+                </div>
+                <div class="mobile:w-full mobile:h-[50%] laptop:w-[50%] laptop:h-full flex items-center justify-center gap-[20px]">
+                    <a href="./index.html" class="dark:hover:text-[#646cff] block text-[#282938] mobile:text-[12px] tablet:text-[16px] hover:text-[#1c1e53] transition-all duration-300 ease-linear font-['Poppins']">Home</a>
+                    <a href="./aboutus.html" class="dark:hover:text-[#646cff] block text-[#282938] mobile:text-[12px] tablet:text-[16px] hover:text-[#1c1e53] transition-all duration-300 ease-linear font-['Poppins']">About us</a>
+                    <a href="./features.html" class="dark:hover:text-[#646cff] block text-[#282938] mobile:text-[12px] tablet:text-[16px] hover:text-[#1c1e53] transition-all duration-300 ease-linear font-['Poppins']">Features</a>
+                    <a href="./pricing.html" class="dark:hover:text-[#646cff] block text-[#282938] mobile:text-[12px] tablet:text-[16px] hover:text-[#1c1e53] transition-all duration-300 ease-linear font-['Poppins'] ">Pricing</a>
+                    <a href="#" class="dark:hover:text-[#646cff] block text-[#282938] mobile:text-[12px] tablet:text-[16px] hover:text-[#1c1e53] transition-all duration-300 ease-linear font-['Poppins']">FAQ</a>
+                    <a href="./blog.html" class="dark:hover:text-[#646cff] block text-[#282938] mobile:text-[12px] tablet:text-[16px] hover:text-[#1c1e53] transition-all duration-300 ease-linear font-['Poppins'] ">Blog</a>
+                </div>
+            </div>
+        </div>
+        </footer>
+        <!-- #endregion -->
+
+    </div>
+
+    <script>
+        // Toggle mobile menu
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            var mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+        let btn=document.querySelector(".btn")
+      btn.addEventListener("click", function(){
+        document.body.setAttribute("data-theme", "dark")
+    })
+
+    </script>
+</body>
+</html>
