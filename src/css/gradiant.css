@@ -1,0 +1,26 @@
+.grad-1{
+    background: rgb(244,237,225);
+    background: linear-gradient(122deg, rgba(244,237,225,1) 0%, rgba(152,177,198,1) 100%);
+}
+.grad-2{
+    background: rgb(255,211,175);
+    background: linear-gradient(122deg, rgba(255,211,175,1) 0%, rgba(79,86,255,1) 100%);
+}
+.grad-3{
+    background: rgb(238,188,167);
+    background: linear-gradient(122deg, rgba(238,188,167,1) 0%, rgba(200,200,200,1) 100%);
+}
+.grad-4{
+    background: rgb(194,231,242);
+    background: linear-gradient(122deg, rgba(194,231,242,1) 0%, rgba(152,164,255,1) 100%);
+
+}
+.grad-5{
+    background: rgb(197,188,255);
+    background: linear-gradient(122deg, rgba(197,188,255,1) 0%, rgba(155,246,213,1) 100%);
+
+}
+.grad-6{
+    background: rgb(210,214,253);
+    background: linear-gradient(122deg, rgba(210,214,253,1) 0%, rgba(214,172,234,1) 100%);
+}
